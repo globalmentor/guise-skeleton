@@ -23,8 +23,8 @@
 		"clean-css-cli": "^4.2.1",
 		"copyfiles": "^2.1.0",
 		"cross-var": "^1.1.0",
+		"cross-zip-cli": "^1.0.0",
 		"foreach-cli": "^1.8.0",
-		"jszip-cli": "^1.4.24",
 		"mkdirp": "^0.5.1",
 		"preamble-cli": "^2.0.0",
 		"replace-in-file": "^3.4.2",
@@ -34,14 +34,14 @@
 	},
 	"scripts": {
 		"test": "stylelint \"src/main/css/guise-skeleton-*.css\"",
-		"clean": "rimraf \"dist/*\"",
-		"prebuild": "mkdirp dist",
+		"clean": "rimraf \"dist/*\" && rimraf target",
+		"prebuild": "mkdirp dist && mkdirp target",
 		"build": "npm run build:copy-sources && npm run build:minify && npm run build:add-min-preambles && npm run build:add-source-charset && npm run build:insert-version && npm run package",
 		"build:copy-sources": "copyfiles --up 2 --verbose \"src/main/css/*.css\" dist",
 		"build:minify": "foreach --no-c --glob \"src/main/css/*.css\" -x \"cleancss #{path} -o dist/css/#{name}.min.css --source-map\"",
 		"build:add-min-preambles": "foreach --no-c --glob \"dist/css/guise-skeleton*.min.css\" -x \"preamble -o #{path} -p \\\" * Guise™ Skeleton x.x.x-SNAPSHOT #{base}\\\" -e src/main/resources/min-preamble-footer.css\" && foreach --no-c --glob \"dist/css/guise-skeleton*.min.css\" -x \"preamble -o #{path} -e src/main/resources/min-preamble-header.css\"",
 		"build:add-source-charset": "foreach --no-c --glob \"dist/css/guise-skeleton*.css\" --ignore \"dist/css/guise-skeleton*.min.css\" -x \"preamble -o #{path} -e src/main/resources/charset.css\"",
 		"build:insert-version": "cross-var replace-in-file \"x.x.x-SNAPSHOT\" \"$npm_package_version\" \"dist/css/guise-skeleton*.css\"",
-		"package": "cross-var jszip -o dist/guise-skeleton-$npm_package_version.zip --config jszip-dist.json"
+		"package": "cross-var cross-zip dist target/guise-skeleton-$npm_package_version.zip"
 	}
 }

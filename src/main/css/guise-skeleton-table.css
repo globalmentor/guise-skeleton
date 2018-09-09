@@ -1,0 +1,83 @@
+/*
+ * Guise™ Skeleton Table x.x.x-SNAPSHOT <https://guise.io/skeleton/>
+ *
+ * Copyright © 2018 GlobalMentor, Inc. <http://www.globalmentor.com/> 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/* see https://github.com/pure-css/pure/tree/master/src/tables */
+
+:root {
+	--table-border-color: var(--component-border-color);
+	--table-header-background-color: var(--component-accent-color);
+	--table-header-font-family: var(--heading-font-family);
+	--table-stripe-background-color: var(--component-background-color);
+	--table-highlight-background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+}
+
+table {
+	border: 1px solid var(--table-border-color);
+}
+
+caption {
+	font-family: var(--table-header-font-family);
+	/* override Reboot */
+	caption-side: unset;
+}
+
+td, th {
+	border-left: 1px solid var(--table-border-color);
+	border-width: 0 0 0 1px;
+	overflow: visible;
+	padding: 0.5em 1em;
+}
+
+thead, table th {
+	background-color: var(--table-header-background-color);
+	text-align: left;
+	vertical-align: bottom;
+}
+
+/* tables: striped */
+tbody tr:nth-child(even) {
+	background-color: var(--table-stripe-background-color);
+}
+
+tbody tr:nth-child(even) th {
+	background-color: var(--table-border-color);
+}
+
+/* tables: bordered */
+td {
+	border-bottom: 1px solid var(--table-border-color);
+}
+
+tbody>tr:last-child>th, tbody>tr:last-child>td {
+	border-bottom-width: 0;
+}
+
+/* tables: horizontal borders */
+th, td {
+	border-width: 0 0 1px 0;
+	border-bottom: 1px solid var(--table-border-color);
+}
+
+tbody>tr:last-child>th, tbody>tr:last-child>td {
+	border-bottom-width: 0;
+}
+
+/* tables: hover*/
+tbody tr:hover, tbody tr:hover th {
+	background-image: var(--table-highlight-background-image);
+}

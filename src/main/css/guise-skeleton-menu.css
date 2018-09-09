@@ -1,0 +1,186 @@
+/*
+ * Guise™ Skeleton Menu x.x.x-SNAPSHOT <https://guise.io/skeleton/>
+ *
+ * Copyright © 2018 GlobalMentor, Inc. <http://www.globalmentor.com/> 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/* see https://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css/ */
+
+:root {
+	--menu-background-color: var(--component-background-color);
+	--menu-border-color: var(--component-border-color);
+	--menu-font-family: var(--heading-font-family);
+	--menu-highlight-background-color: var(--component-highlight-background-color);
+	--navbar-background-color: var(--menu-background-color);
+	--navbar-border-color: var(--menu-border-color);
+	--navbar-font-family: var(--menu-font-family);
+}
+
+/* menu */
+
+ul.menu {
+	position: relative;
+}
+
+ul.menu ul {
+	position: absolute;
+}
+
+ul.menu, ul.menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li {
+	display: inline-block;
+	float: left;
+}
+
+ul.menu li a {
+	text-align: center;
+}
+
+ul.menu li ul li a {
+	text-align: left;
+}
+
+ul.menu li a {
+	display: block;
+	line-height: 3.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-family: var(--menu-font-family);
+	text-decoration: none;
+}
+
+ul.menu li.active {
+	color: #555555;
+	background-color: var(--component-active-color);
+}
+
+ul.menu li:hover a {
+	color: black;
+}
+
+ul.menu li:hover ul a {
+	background-color: white;
+}
+
+ul.menu li:hover ul a:hover {
+	color: black;
+	background-color: var(--menu-highlight-background-color);
+}
+
+ul.menu li ul {
+	display: none;
+	background-color: var(--menu-background-color);
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--menu-border-color);
+	z-index: 1;
+}
+
+ul.menu li a:not(:last-child)::after {
+	content: "\00A0▼";
+}
+
+ul.menu li ul li {
+	display: block;
+	float: none;
+	line-height: 3.5em;
+}
+
+ul.menu li a:hover+ul, ul.menu li ul:hover {
+	display: block;
+}
+
+/* navbar */
+
+nav.bar {
+	color: #777777;
+	background-color: var(--navbar-background-color);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-color: var(--navbar-border-color);
+	line-height: 3.5em;
+}
+
+nav.bar ul.menu li a {
+	line-height: inherit;
+}
+
+nav.bar a {
+	color: inherit;
+	text-decoration: none;
+}
+
+nav.bar a, nav.bar label {
+	padding-left: 1em;
+	padding-right: 1em;
+	font-family: var(--navbar-font-family);
+}
+
+nav.bar a:hover, nav.bar label.toggle:hover {
+	color: black;
+}
+
+nav.bar label.toggle {
+	cursor: pointer;
+	margin-left: auto;
+}
+
+nav.bar input.toggle[type=checkbox]~label.toggle {
+	display: none;
+}
+
+nav.bar input.toggle[type=checkbox] {
+	display: none;
+}
+
+nav.bar input.toggle[type=checkbox]:checked~ul.menu {
+	display: block;
+}
+
+/* navbar menu collapse; initially hidden only if toggle is present */
+@media screen and (max-width: 800px) {
+	nav.bar input.toggle[type=checkbox]~ul.menu, nav.bar input.toggle[type=checkbox]~ul.menu ul {
+		position: static;
+	}
+
+	nav.bar input.toggle[type=checkbox]~ul.menu {
+		display: none;
+	}
+
+	ul.menu li, ul.menu li a {
+		width: 100%;
+	}
+
+	ul.menu li ul {
+		border-style: none;
+	}
+
+	ul.menu li ul li a {
+		text-align: center;
+	}
+
+	ul.menu li:hover ul a {
+		background-color: var(--menu-background-color);
+	}
+
+	nav.bar input.toggle[type=checkbox]~label.toggle {
+		display: block;
+	}
+}

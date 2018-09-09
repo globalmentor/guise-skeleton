@@ -1,0 +1,87 @@
+/*
+ * Guise™ Skeleton Button x.x.x-SNAPSHOT <https://guise.io/skeleton/>
+ *
+ * Copyright © 2018 GlobalMentor, Inc. <http://www.globalmentor.com/> 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/* see https://github.com/pure-css/pure/tree/master/src/buttons */
+
+:root {
+	--button-font-family: var(--menu-font-family, var(--heading-font-family));
+}
+
+button, a.button {
+	display: inline-block;
+	box-sizing: border-box;
+	border: none rgba(0, 0, 0, 0);
+	border-radius: 2px;
+	padding: 0.5em 1em;
+	color: rgba(0, 0, 0, 0.80);
+	background-color: var(--component-accent-color);
+	font-family: var(--button-font-family);
+	line-height: normal;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	user-select: none;
+}
+
+button:hover, a.button:hover, button:focus, a.button:focus {
+	background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.15));
+}
+
+button:focus, a.button:focus {
+	outline: 0;
+}
+
+button:active, a.button:active {
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.20) inset;
+}
+
+button[disabled] {
+	border: none;
+	background-image: none;
+	opacity: 0.40;
+	cursor: not-allowed;
+	box-shadow: none;
+	pointer-events: none;
+}
+
+button.primary, a.button.primary {
+	background-color: var(--color-primary);
+	color: white;
+}
+
+button.success, a.button.success {
+	background-color: var(--color-success);
+	color: white;
+}
+
+button.warning, a.button.warning {
+	background-color: var(--color-warning);
+	color: white;
+}
+
+button.error, a.button.error {
+	background-color: var(--color-error);
+	color: white;
+}
+
+.box>button, .box>a.button {
+	flex-basis: auto;
+	flex-grow: 0;
+}

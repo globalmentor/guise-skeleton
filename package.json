@@ -1,0 +1,47 @@
+{
+	"name": "@guise/skeleton",
+	"version": "0.1.0-SNAPSHOT",
+	"description": "Guise™ Skeleton: The simple, semantic, bare-bones CSS to hold your site together.",
+	"author": "Garret Wilson <garret@globalmentor.com> (http://www.garretwilson.com/)",
+	"organization": "GlobalMentor, Inc. (http://www.globalmentor.com/)",
+	"license": "Apache-2.0",
+	"homepage": "https://guise.io/skeleton/",
+	"keywords": [
+		"Guise",
+		"Skeleton",
+		"CSS",
+		"library"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/globalmentor/guise-skeleton.git"
+	},
+	"bugs": {
+		"url": "https://github.com/globalmentor/guise-skeleton/issues"
+	},
+	"devDependencies": {
+		"clean-css-cli": "^4.2.1",
+		"copyfiles": "^2.1.0",
+		"cross-var": "^1.1.0",
+		"foreach-cli": "^1.8.0",
+		"jszip-cli": "^1.4.24",
+		"mkdirp": "^0.5.1",
+		"preamble-cli": "^2.0.0",
+		"replace-in-file": "^3.4.2",
+		"rimraf": "^2.6.2",
+		"stylelint": "^9.5.0",
+		"stylelint-config-recommended": "^2.1.0"
+	},
+	"scripts": {
+		"test": "stylelint \"src/main/css/guise-skeleton-*.css\"",
+		"clean": "rimraf \"dist/*\"",
+		"prebuild": "mkdirp dist",
+		"build": "npm run build:copy-sources && npm run build:minify && npm run build:add-preambles && npm run build:add-charset && npm run build:insert-version && npm run package",
+		"build:copy-sources": "copyfiles --up 2 --verbose \"src/main/css/*.css\" dist",
+		"build:minify": "foreach --no-c -g \"src/main/css/*.css\" -x \"cleancss #{path} -o dist/css/#{name}.min.css --source-map\"",
+		"build:add-preambles": "foreach --no-c -g \"dist/css/guise-skeleton-*.min.css\" -x \"preamble -o #{path} -p \\\" * Guise™ Skeleton x.x.x-SNAPSHOT #{base}\\\" -e src/main/resources/preamble-footer.css\" && foreach --no-c -g \"dist/css/guise-skeleton-*.min.css\" -x \"preamble -o #{path} -e src/main/resources/preamble-header.css\"",
+		"build:add-charset": "foreach --no-c -g \"dist/css/guise-skeleton-*.css\" -x \"preamble -o #{path} -e src/main/resources/charset.css\"",
+		"build:insert-version": "cross-var replace-in-file \"x.x.x-SNAPSHOT\" \"$npm_package_version\" \"dist/css/guise-skeleton*.css\"",
+		"package": "cross-var jszip -o dist/guise-skeleton-$npm_package_version.zip --config jszip-dist.json"
+	}
+}

@@ -37,43 +37,52 @@
 	--heading-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-.banner, .hero {
+.guise-skeleton .banner, .guise-skeleton .hero,
+.guise-banner, .guise-hero, {
 	font-size: calc(0.5em + 1vw);
 }
 
-.hero:not(.banner) {
+.guise-skeleton .hero:not(.banner),
+.guise-hero:not(.banner) {
 	width: 100vw;
 	height: 100vh;
 }
 
-body header .banner {
+body.guise-skeleton header .banner,
+body header .guise-banner {
 	padding-left: 1em;
 	padding-right: 1em;
 	overflow: auto;
 }
 
-body header .banner.hero {
+body.guise-skeleton header .banner.hero,
+body header .guise-banner.guise-hero {
 	min-height: 16rem;
 }
 
-main {
+.guise-skeleton main,
+main.guise-main {
 	padding-left: 1em;
 	padding-right: 1em;
 }
 
-footer {
+.guise-skeleton footer,
+footer.guise-footer {
 	padding: 1em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.guise-skeleton h1, .guise-skeleton h2, .guise-skeleton h3, .guise-skeleton h4, .guise-skeleton h5, .guise-skeleton h6,
+h1.guise-h1, h2.guise-h2, h3.guise-h3, h4.guise-h4, h5.guise-h5, h6.guise-h6 {
 	font-family: var(--heading-font-family);
 	font-weight: 500;
 }
 
-.title {
+.guise-skeleton .title,
+.guise-title {
 	font-size: 400%;
 }
 
-.subtitle {
+.guise-skeleton .subtitle,
+.guise-subtitle {
 	font-size: 200%;
 }

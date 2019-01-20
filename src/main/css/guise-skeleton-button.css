@@ -22,7 +22,8 @@
 	--button-font-family: var(--menu-font-family, var(--heading-font-family));
 }
 
-button, a.button {
+.guise-skeleton button, .guise-skeleton a.button,
+button.guise-button, a.guise-button {
 	display: inline-block;
 	box-sizing: border-box;
 	border: none rgba(0, 0, 0, 0);
@@ -40,19 +41,23 @@ button, a.button {
 	user-select: none;
 }
 
-button:hover, a.button:hover, button:focus, a.button:focus {
+.guise-skeleton button:hover, .guise-skeleton a.button:hover, .guise-skeleton button:focus, .guise-skeleton a.button:focus,
+button.guise-button:hover, a.guise-button:hover, button.guise-button:focus, a.guise-button:focus {
 	background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.15));
 }
 
-button:focus, a.button:focus {
+.guise-skeleton button:focus, .guise-skeleton a.button:focus,
+button.guise-button:focus, a.guise-button:focus {
 	outline: 0;
 }
 
-button:active, a.button:active {
+.guise-skeleton button:active, .guise-skeleton a.button:active,
+button.guise-button:active, a.guise-button:active {
 	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.20) inset;
 }
 
-button[disabled] {
+.guise-skeleton button[disabled],
+button.guise-button[disabled] {
 	border: none;
 	background-image: none;
 	opacity: 0.40;
@@ -61,27 +66,32 @@ button[disabled] {
 	pointer-events: none;
 }
 
-button.primary, a.button.primary {
+.guise-skeleton button.primary, .guise-skeleton a.button.primary,
+button.guise-button.primary, a.guise-button.primary {
 	background-color: var(--color-primary);
 	color: white;
 }
 
-button.success, a.button.success {
+.guise-skeleton button.success, .guise-skeleton a.button.success,
+button.guise-button.success, a.guise-button.success {
 	background-color: var(--color-success);
 	color: white;
 }
 
-button.warning, a.button.warning {
+.guise-skeleton button.warning, .guise-skeleton a.button.warning,
+button.guise-button.warning, a.guise-button.warning {
 	background-color: var(--color-warning);
 	color: white;
 }
 
-button.error, a.button.error {
+.guise-skeleton button.error, .guise-skeleton a.button.error,
+button.guise-button.error, a.guise-button.error {
 	background-color: var(--color-error);
 	color: white;
 }
 
-.box>button, .box>a.button {
+.guise-skeleton .box>button, .guise-skeleton .box>a.button,
+.box>button.guise-button, .box>a.guise-button {
 	flex-basis: auto;
 	flex-grow: 0;
 }

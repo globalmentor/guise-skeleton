@@ -16,39 +16,48 @@
  * limitations under the License.
  */
 
-.box {
+.guise-skeleton .box,
+.guise-box {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.box.stacked {
+.guise-skeleton .box.stacked,
+.guise-box.guise-stacked {
 	flex-direction: column;
 }
 
-.box>* {
+.guise-skeleton .box>*,
+.guise-box>* {
 	flex-basis: 0%;
 	flex-grow: 1;
 	max-width: 100%;
 }
 
-section.box.stacked>header, section.box.stacked>footer,
-.box>.card, .box>.concise {
+.guise-skeleton section.box.stacked>header, .guise-skeleton section.box.stacked>footer,
+section.guise-box.guise-stacked>header, section.guise-box.guise-stacked>footer,
+.guise-skeleton .box>.card, .guise-skeleton .box>.concise,
+.guise-box>.guise-card, .guise-box>.guise-concise {
 	flex-basis: auto;
 	flex-grow: 0;
 }
 
-.box.focalized {
+.guise-skeleton .box.focalized,
+.guise-box.guise-focalized {
 	justify-content: center;
 }
 
-.panel, .board {
+.guise-skeleton .panel, .guise-skeleton .board,
+.guise-panel, .guise-board {
 	padding: 1em;
 }
 
-.board.box:not(.focalized) {
+.guise-skeleton .board.box:not(.focalized),
+.guise-board.guise-box:not(.guise-focalized) {
 	justify-content: space-around;
 }
 
-.board>* {
+.guise-skeleton .board>*,
+.guise-board>* {
 	margin: 0.5em;
 }

@@ -30,34 +30,41 @@
 
 /* menu */
 
-ul.menu {
+.guise-skeleton ul.menu,
+ul.guise-menu {
 	position: relative;
 }
 
-ul.menu ul {
+.guise-skeleton ul.menu ul,
+ul.guise-menu ul {
 	position: absolute;
 }
 
-ul.menu, ul.menu ul {
+.guise-skeleton ul.menu, .guise-skeleton ul.menu ul,
+ul.guise-menu, ul.guise-menu ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-ul.menu li {
+.guise-skeleton ul.menu li,
+ul.guise-menu li {
 	display: inline-block;
 	float: left;
 }
 
-ul.menu li a {
+.guise-skeleton ul.menu li a,
+ul.guise-menu li a {
 	text-align: center;
 }
 
-ul.menu li ul li a {
+.guise-skeleton ul.menu li ul li a,
+ul.guise-menu li ul li a {
 	text-align: left;
 }
 
-ul.menu li a {
+.guise-skeleton ul.menu li a,
+ul.guise-menu li a {
 	display: block;
 	line-height: 3.5em;
 	padding-left: 1em;
@@ -66,25 +73,30 @@ ul.menu li a {
 	text-decoration: none;
 }
 
-ul.menu li.active {
+.guise-skeleton ul.menu li.active,
+ul.guise-menu li.active {
 	color: #555555;
 	background-color: var(--component-active-color);
 }
 
-ul.menu li:hover a {
+.guise-skeleton ul.menu li:hover a,
+ul.guise-menu li:hover a {
 	color: black;
 }
 
-ul.menu li:hover ul a {
+.guise-skeleton ul.menu li:hover ul a,
+ul.guise-menu li:hover ul a {
 	background-color: white;
 }
 
-ul.menu li:hover ul a:hover {
+.guise-skeleton ul.menu li:hover ul a:hover,
+ul.guise-menu li:hover ul a:hover {
 	color: black;
 	background-color: var(--menu-highlight-background-color);
 }
 
-ul.menu li ul {
+.guise-skeleton ul.menu li ul,
+ul.guise-menu li ul {
 	display: none;
 	background-color: var(--menu-background-color);
 	border-style: solid;
@@ -93,23 +105,27 @@ ul.menu li ul {
 	z-index: 1;
 }
 
-ul.menu li a:not(:last-child)::after {
+.guise-skeleton ul.menu li a:not(:last-child)::after,
+ul.guise-menu li a:not(:last-child)::after {
 	content: "\00A0▼";
 }
 
-ul.menu li ul li {
+.guise-skeleton ul.menu li ul li,
+ul.guise-menu li ul li {
 	display: block;
 	float: none;
 	line-height: 3.5em;
 }
 
-ul.menu li a:hover+ul, ul.menu li ul:hover {
+.guise-skeleton ul.menu li a:hover+ul, .guise-skeleton ul.menu li ul:hover,
+ul.guise-menu li a:hover+ul, ul.guise-menu li ul:hover {
 	display: block;
 }
 
 /* navbar */
 
-nav.bar {
+.guise-skeleton nav.bar,
+nav.guise-bar {
 	color: #777777;
 	background-color: var(--navbar-background-color);
 	border-bottom-style: solid;
@@ -118,69 +134,86 @@ nav.bar {
 	line-height: 3.5em;
 }
 
-nav.bar ul.menu li a {
+.guise-skeleton nav.bar ul.menu li a,
+nav.guise-bar ul.guise-menu li a {
 	line-height: inherit;
 }
 
-nav.bar a {
+.guise-skeleton nav.bar a,
+nav.guise-bar a {
 	color: inherit;
 	text-decoration: none;
 }
 
-nav.bar a, nav.bar label {
+.guise-skeleton nav.bar a, .guise-skeleton nav.bar label,
+nav.guise-bar a, nav.guise-bar label {
 	padding-left: 1em;
 	padding-right: 1em;
 	font-family: var(--navbar-font-family);
 }
 
-nav.bar a:hover, nav.bar label.toggle:hover {
+.guise-skeleton nav.bar a:hover, .guise-skeleton nav.bar label.toggle:hover,
+nav.guise-bar a:hover, nav.guise-bar label.toggle:hover {
 	color: black;
 }
 
-nav.bar label.toggle {
+.guise-skeleton nav.bar label.toggle,
+nav.guise-bar label.toggle {
 	cursor: pointer;
 	margin-left: auto;
 }
 
-nav.bar input.toggle[type=checkbox]~label.toggle {
+.guise-skeleton nav.bar input.toggle[type=checkbox]~label.toggle,
+nav.guise-bar input.toggle[type=checkbox]~label.toggle {
 	display: none;
 }
 
-nav.bar input.toggle[type=checkbox] {
+.guise-skeleton nav.bar input.toggle[type=checkbox],
+nav.guise-bar input.toggle[type=checkbox] {
 	display: none;
 }
 
-nav.bar input.toggle[type=checkbox]:checked~ul.menu {
+.guise-skeleton nav.bar input.toggle[type=checkbox]:checked~ul.menu,
+nav.guise-bar input.toggle[type=checkbox]:checked~ul.guise-menu {
 	display: block;
 }
 
 /* navbar menu collapse; initially hidden only if toggle is present */
 @media screen and (max-width: 800px) {
-	nav.bar input.toggle[type=checkbox]~ul.menu, nav.bar input.toggle[type=checkbox]~ul.menu ul {
+
+	.guise-skeleton nav.bar input.toggle[type=checkbox]~ul.menu, .guise-skeleton nav.bar input.toggle[type=checkbox]~ul.menu ul,
+	nav.guise-bar input.toggle[type=checkbox]~ul.guise-menu, nav.bar input.toggle[type=checkbox]~ul.guise-menu ul {
 		position: static;
 	}
 
-	nav.bar input.toggle[type=checkbox]~ul.menu {
+	.guise-skeleton nav.bar input.toggle[type=checkbox]~ul.menu,
+	nav.guise-bar input.toggle[type=checkbox]~ul.guise-menu {
 		display: none;
 	}
 
-	ul.menu li, ul.menu li a {
+	.guise-skeleton ul.menu li, .guise-skeleton ul.menu li a,
+	ul.guise-menu li, ul.guise-menu li a {
 		width: 100%;
 	}
 
-	ul.menu li ul {
+	.guise-skeleton ul.menu li ul,
+	ul.guise-menu li ul {
 		border-style: none;
 	}
 
-	ul.menu li ul li a {
+	.guise-skeleton ul.menu li ul li a,
+	ul.guise-menu li ul li a {
 		text-align: center;
 	}
 
-	ul.menu li:hover ul a {
+	.guise-skeleton ul.menu li:hover ul a,
+	ul.guise-menu li:hover ul a {
 		background-color: var(--menu-background-color);
 	}
 
-	nav.bar input.toggle[type=checkbox]~label.toggle {
+	.guise-skeleton nav.bar input.toggle[type=checkbox]~label.toggle,
+	nav.guise-bar input.toggle[type=checkbox]~label.toggle {
 		display: block;
 	}
+
 }

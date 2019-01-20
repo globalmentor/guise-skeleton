@@ -21,7 +21,8 @@
 	--card-background-color: white;
 }
 
-.card {
+.guise-skeleton .card,
+.guise-card {
 	background-color: var(--card-background-color);
 	border-style: solid;
 	border-width: 1px;

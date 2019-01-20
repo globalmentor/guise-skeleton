@@ -1,7 +1,7 @@
 /*
  * Guise™ Skeleton Layout x.x.x-SNAPSHOT (https://guise.io/skeleton/)
  *
- * Copyright © 2018 GlobalMentor, Inc. (http://www.globalmentor.com/)
+ * Copyright © 2018–2019 GlobalMentor, Inc. (http://www.globalmentor.com/)
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+:root {
+	--guise-size-marginal: 11%;
+	--guise-size-subordinate: 22%;
+	--guise-size-significant: 33%;
+	--guise-size-partial: 50%;
+	--guise-size-substantial: 66%;
+	--guise-size-full: 100%;
+}
+
+/* #box */
 
 .guise-skeleton .box,
 .guise-box {
@@ -60,4 +71,170 @@ section.guise-box.guise-stacked>header, section.guise-box.guise-stacked>footer,
 .guise-skeleton .board>*,
 .guise-board>* {
 	margin: 0.5em;
+}
+
+/* #lid */
+
+.guise-skeleton .lid,
+.guise-lid {
+	position: relative;
+}
+
+/* #flap */
+
+.guise-skeleton .lid>.flap,
+.guise-lid>.guise-flap {
+	position: absolute;
+}
+
+/* ##flap side-block-start */
+
+.guise-skeleton .lid>.flap.side-block-start,
+.guise-lid>.guise-flap.guise-side-block-start {
+	top: 0%;
+	width: 100%;
+}
+
+.guise-skeleton .lid>.flap.side-block-start.size-marginal,
+.guise-lid>.guise-flap.guise-side-block-start.guise-size-marginal {
+	bottom: calc(100% - var(--guise-size-marginal));
+}
+
+.guise-skeleton .lid>.flap.side-block-start.size-subordinate,
+.guise-lid>.guise-flap.guise-side-block-start.guise-size-subordinate {
+	bottom: calc(100% - var(--guise-size-subordinate));
+}
+
+.guise-skeleton .lid>.flap.side-block-start.size-significant,
+.guise-lid>.guise-flap.guise-side-block-start.guise-size-significant {
+	bottom: calc(100% - var(--guise-size-significant));
+}
+
+.guise-skeleton .lid>.flap.side-block-start.size-partial,
+.guise-lid>.guise-flap.guise-side-block-start.guise-size-partial {
+	bottom: calc(100% - var(--guise-size-partial));
+}
+
+.guise-skeleton .lid>.flap.side-block-start.size-substantial,
+.guise-lid>.guise-flap.guise-side-block-start.guise-size-substantial {
+	bottom: calc(100% - var(--guise-size-substantial));
+}
+
+.guise-skeleton .lid>.flap.side-block-start.size-full,
+.guise-lid>.guise-flap.guise-side-block-start.guise-size-full {
+	bottom: calc(100% - var(--guise-size-full));
+}
+
+/* ##flap side-block-end */
+
+.guise-skeleton .lid>.flap.side-block-end,
+.guise-lid>.guise-flap.guise-side-block-end {
+	bottom: 0%;
+	width: 100%;
+}
+
+.guise-skeleton .lid>.flap.side-block-end.size-marginal,
+.guise-lid>.guise-flap.guise-side-block-end.guise-size-marginal {
+	top: calc(100% - var(--guise-size-marginal));
+}
+
+.guise-skeleton .lid>.flap.side-block-end.size-subordinate,
+.guise-lid>.guise-flap.guise-side-block-end.guise-size-subordinate {
+	top: calc(100% - var(--guise-size-subordinate));
+}
+
+.guise-skeleton .lid>.flap.side-block-end.size-significant,
+.guise-lid>.guise-flap.guise-side-block-end.guise-size-significant {
+	top: calc(100% - var(--guise-size-significant));
+}
+
+.guise-skeleton .lid>.flap.side-block-end.size-partial,
+.guise-lid>.guise-flap.guise-side-block-end.guise-size-partial {
+	top: calc(100% - var(--guise-size-partial));
+}
+
+.guise-skeleton .lid>.flap.side-block-end.size-substantial,
+.guise-lid>.guise-flap.guise-side-block-end.guise-size-substantial {
+	top: calc(100% - var(--guise-size-substantial));
+}
+
+.guise-skeleton .lid>.flap.side-block-end.size-full,
+.guise-lid>.guise-flap.guise-side-block-end.guise-size-full {
+	top: calc(100% - var(--guise-size-full));
+}
+
+/* ##flap side-inline-start */
+
+.guise-skeleton .lid>.flap.side-inline-start,
+.guise-lid>.guise-flap.guise-side-inline-start {
+	left: 0%;
+	height: 100%;
+}
+
+.guise-skeleton .lid>.flap.side-inline-start.size-marginal,
+.guise-lid>.guise-flap.guise-side-inline-start.guise-size-marginal {
+	right: calc(100% - var(--guise-size-marginal));
+}
+
+.guise-skeleton .lid>.flap.side-inline-start.size-subordinate,
+.guise-lid>.guise-flap.guise-side-inline-start.guise-size-subordinate {
+	right: calc(100% - var(--guise-size-subordinate));
+}
+
+.guise-skeleton .lid>.flap.side-inline-start.size-significant,
+.guise-lid>.guise-flap.guise-side-inline-start.guise-size-significant {
+	right: calc(100% - var(--guise-size-significant));
+}
+
+.guise-skeleton .lid>.flap.side-inline-start.size-partial,
+.guise-lid>.guise-flap.guise-side-inline-start.guise-size-partial {
+	right: calc(100% - var(--guise-size-partial));
+}
+
+.guise-skeleton .lid>.flap.side-inline-start.size-substantial,
+.guise-lid>.guise-flap.guise-side-inline-start.guise-size-substantial {
+	right: calc(100% - var(--guise-size-substantial));
+}
+
+.guise-skeleton .lid>.flap.side-inline-start.size-full,
+.guise-lid>.guise-flap.guise-side-inline-start.guise-size-full {
+	right: calc(100% - var(--guise-size-full));
+}
+
+/* ##flap side-inline-end */
+
+.guise-skeleton .lid>.flap.side-inline-end,
+.guise-lid>.guise-flap.guise-side-inline-end {
+	right: 0%;
+	height: 100%;
+}
+
+.guise-skeleton .lid>.flap.side-inline-end.size-marginal,
+.guise-lid>.guise-flap.guise-side-inline-end.guise-size-marginal {
+	left: calc(100% - var(--guise-size-marginal));
+}
+
+.guise-skeleton .lid>.flap.side-inline-end.size-subordinate,
+.guise-lid>.guise-flap.guise-side-inline-end.guise-size-subordinate {
+	left: calc(100% - var(--guise-size-subordinate));
+}
+
+.guise-skeleton .lid>.flap.side-inline-end.size-significant,
+.guise-lid>.guise-flap.guise-side-inline-end.guise-size-significant {
+	left: calc(100% - var(--guise-size-significant));
+}
+
+.guise-skeleton .lid>.flap.side-inline-end.size-partial,
+.guise-lid>.guise-flap.guise-side-inline-end.guise-size-partial {
+	left: calc(100% - var(--guise-size-partial));
+}
+
+.guise-skeleton .lid>.flap.side-inline-end.size-substantial,
+.guise-lid>.guise-flap.guise-side-inline-end.guise-size-substantial {
+	left: calc(100% - var(--guise-size-substantial));
+}
+
+.guise-skeleton .lid>.flap.side-inline-end.size-full,
+.guise-lid>.guise-flap.guise-side-inline-end.guise-size-full {
+	left: calc(100% - var(--guise-size-full));
 }

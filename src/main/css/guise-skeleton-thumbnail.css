@@ -16,7 +16,8 @@
  * limitations under the License.
  */
 
-img.thumbnail {
+.guise-skeleton img.thumbnail,
+img.guise-thumbnail {
 	width: 20vw;
 	height: 20vw;
 	min-width: 100px;

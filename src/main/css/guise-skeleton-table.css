@@ -26,58 +26,69 @@
 	--table-highlight-background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
 }
 
-table {
+.guise-skeleton table,
+table.guise-table {
 	border: 1px solid var(--table-border-color);
 }
 
-caption {
+.guise-skeleton caption,
+table.guise-table>caption {
 	font-family: var(--table-header-font-family);
 	/* override Reboot */
 	caption-side: unset;
 }
 
-td, th {
+.guise-skeleton td, .guise-skeleton th,
+table.guise-table>tr>td, table.guise-table>thead>tr>td, table.guise-table>tbody>tr>td, table.guise-table>tfoot>tr>td, table.guise-table>th, table.guise-table>thead>th, table.guise-table>tbody>th, table.guise-table>tfoot>th {
 	border-left: 1px solid var(--table-border-color);
 	border-width: 0 0 0 1px;
 	overflow: visible;
 	padding: 0.5em 1em;
 }
 
-thead, table th {
+.guise-skeleton thead, .guise-skeleton table th,
+table.guise-table>thead, table.guise-table>th, table.guise-table>thead>th {
 	background-color: var(--table-header-background-color);
 	text-align: left;
 	vertical-align: bottom;
 }
 
 /* tables: striped */
-tbody tr:nth-child(even) {
+.guise-skeleton tbody tr:nth-child(even),
+table.guise-table>tbody tr:nth-child(even) {
 	background-color: var(--table-stripe-background-color);
 }
 
-tbody tr:nth-child(even) th {
+.guise-skeleton tbody tr:nth-child(even) th,
+table.guise-table>tbody tr:nth-child(even) th {
 	background-color: var(--table-border-color);
 }
 
 /* tables: bordered */
-td {
+.guise-skeleton td,
+table.guise-table>tr>td, table.guise-table>thead>tr>td, table.guise-table>tbody>tr>td, table.guise-table>tfoot>tr>td {
 	border-bottom: 1px solid var(--table-border-color);
 }
 
-tbody>tr:last-child>th, tbody>tr:last-child>td {
+.guise-skeleton tbody>tr:last-child>th, .guise-skeleton tbody>tr:last-child1,
+table.guise-table>tbody>tr:last-child>th, table.guise-table>tbody>tr:last-child>td {
 	border-bottom-width: 0;
 }
 
 /* tables: horizontal borders */
-th, td {
+.guise-skeleton th, .guise-skeleton td,
+table.guise-table>tr>th, table.guise-table>thead>tr>th, table.guise-table>tbody>tr>th, table.guise-table>tfoot>tr>th, table.guise-table>tr>td, table.guise-table>thead>tr>td, table.guise-table>tbody>tr>td, table.guise-table>tfoot>tr>td {
 	border-width: 0 0 1px 0;
 	border-bottom: 1px solid var(--table-border-color);
 }
 
-tbody>tr:last-child>th, tbody>tr:last-child>td {
+.guise-skeleton tbody>tr:last-child>th, .guise-skeleton tbody>tr:last-child>td,
+table.guise-table>tbody>tr:last-child>th, table.guise-table>tbody>tr:last-child>td {
 	border-bottom-width: 0;
 }
 
 /* tables: hover*/
-tbody tr:hover, tbody tr:hover th {
+.guise-skeleton tbody tr:hover, .guise-skeleton tbody tr:hover th,
+table.guise-table>tbody tr:hover, table.guise-table>tbody tr:hover th {
 	background-image: var(--table-highlight-background-image);
 }

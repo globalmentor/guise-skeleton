@@ -1,7 +1,7 @@
 /*
  * Guise™ Skeleton Base x.x.x-SNAPSHOT (https://guise.io/skeleton/)
  *
- * Copyright © 2018 GlobalMentor, Inc. (http://www.globalmentor.com/)
+ * Copyright © 2018–2019 GlobalMentor, Inc. (http://www.globalmentor.com/)
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,8 @@
 	--component-highlight-background-color: var(--component-accent-color);
 	--component-active-color: var(--component-accent-color);
 	--heading-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+	--guise-overlay-background-color: rgba(0, 0, 0, 0.5);
 }
 
 .guise-skeleton .banner, .guise-skeleton .hero,
@@ -85,4 +87,9 @@ h1.guise-h1, h2.guise-h2, h3.guise-h3, h4.guise-h4, h5.guise-h5, h6.guise-h6 {
 .guise-skeleton .subtitle,
 .guise-subtitle {
 	font-size: 200%;
+}
+
+.guise-skeleton .overlay,
+.guise-overlay {
+	background-color: var(--guise-overlay-background-color);
 }

@@ -22,8 +22,8 @@
 	--table-border-color: var(--component-border-color);
 	--table-header-background-color: var(--component-accent-color);
 	--table-header-font-family: var(--heading-font-family);
-	--table-stripe-background-color: var(--component-background-color);
 	--table-highlight-background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+	--table-stripe-background-color: var(--component-background-color);
 }
 
 .guise-skeleton table,

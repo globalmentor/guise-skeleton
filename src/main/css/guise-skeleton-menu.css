@@ -19,6 +19,8 @@
 /* see https://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css/ */
 
 :root {
+	--menu-active-background-color: var(--component-active-background-color);
+	--menu-active-color: #555555;
 	--menu-background-color: var(--component-background-color);
 	--menu-border-color: var(--component-border-color);
 	--menu-font-family: var(--heading-font-family);
@@ -75,8 +77,8 @@ ul.guise-menu li a {
 
 .guise-skeleton ul.menu li.active,
 ul.guise-menu li.active {
-	color: #555555;
-	background-color: var(--component-active-color);
+	color: var(--menu-active-color);
+	background-color: var(--menu-active-background-color);
 }
 
 .guise-skeleton ul.menu li:hover a,

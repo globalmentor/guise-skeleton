@@ -33,14 +33,14 @@
 	--component-border-color: #D6D6D6;
 	--component-accent-color: #E7E7E7;
 	--component-highlight-background-color: var(--component-accent-color);
-	--component-active-color: var(--component-accent-color);
+	--component-active-background-color: var(--component-accent-color);
 	--heading-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 	--guise-overlay-background-color: rgba(0, 0, 0, 0.5);
 }
 
 .guise-skeleton .banner, .guise-skeleton .hero,
-.guise-banner, .guise-hero, {
+.guise-banner, .guise-hero {
 	font-size: calc(0.5em + 1vw);
 }
 

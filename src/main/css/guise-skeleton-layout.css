@@ -248,3 +248,51 @@ section.guise-box.guise-stacked>header, section.guise-box.guise-stacked>footer,
 .float-end {
 	float: right;
 }
+
+.float-start.size-marginal, float-end.size-marginal {
+	width: var(--guise-size-marginal);
+}
+
+.float-start.size-subordinate, .float-end.size-subordinate {
+	width: var(--guise-size-subordinate);
+}
+
+.float-start.size-significant, .float-end.size-significant {
+	width: var(--guise-size-significant);
+}
+
+.float-start.size-partial, .float-end.size-partial {
+	width: var(--guise-size-partial);
+}
+
+.float-start.size-substantial, .float-end.size-substantial {
+	width: var(--guise-size-substantial);
+}
+
+.float-start.size-full, .float-end.size-full {
+	width: var(--guise-size-full);
+}
+
+.float-start.max-size-marginal, float-end.max-size-marginal {
+	max-width: var(--guise-size-marginal);
+}
+
+.float-start.max-size-subordinate, .float-end.max-size-subordinate {
+	max-width: var(--guise-size-subordinate);
+}
+
+.float-start.max-size-significant, .float-end.max-size-significant {
+	max-width: var(--guise-size-significant);
+}
+
+.float-start.max-size-partial, .float-end.max-size-partial {
+	max-width: var(--guise-size-partial);
+}
+
+.float-start.max-size-substantial, .float-end.max-size-substantial {
+	max-width: var(--guise-size-substantial);
+}
+
+.float-start.max-size-full, .float-end.max-size-full {
+	max-width: var(--guise-size-full);
+}

@@ -79,12 +79,12 @@ h1.guise-h1, h2.guise-h2, h3.guise-h3, h4.guise-h4, h5.guise-h5, h6.guise-h6 {
 	font-weight: 500;
 }
 
-.guise-skeleton .title,
+.guise-skeleton .title:not(.token),
 .guise-title {
 	font-size: 400%;
 }
 
-.guise-skeleton .subtitle,
+.guise-skeleton .subtitle:not(.token),
 .guise-subtitle {
 	font-size: 200%;
 }

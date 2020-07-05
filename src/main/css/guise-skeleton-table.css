@@ -61,7 +61,7 @@ table.guise-table>tbody tr:nth-child(even) {
 
 .guise-skeleton tbody tr:nth-child(even) th,
 table.guise-table>tbody tr:nth-child(even) th {
-	background-color: var(--table-border-color);
+	background-color: var(--table-header-background-color);
 }
 
 /* tables: bordered */

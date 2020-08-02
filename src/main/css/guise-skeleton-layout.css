@@ -25,52 +25,53 @@
 	--guise-size-full: 100%;
 }
 
-/* # box */
+/* # brick layout */
 
-.guise-skeleton .box,
-.guise-box {
+.guise-skeleton .layout-brick,
+.guise-layout-brick {
+	display: flex;
+	justify-content: flex-start;
+}
+
+/* # flex layout */
+
+.guise-skeleton .layout-flex,
+.guise-layout-flex {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.guise-skeleton .box.stacked,
-.guise-box.guise-stacked {
+.guise-skeleton .layout-flex.along-block,
+.guise-layout-flex.guise-along-block {
 	flex-direction: column;
 }
 
-.guise-skeleton .box>*,
-.guise-box>* {
+.guise-skeleton .layout-flex>*,
+.guise-layout-flex>* {
 	flex-basis: 0%;
 	flex-grow: 1;
 	max-width: 100%;
 }
 
-.guise-skeleton section.box.stacked>header, .guise-skeleton section.box.stacked>footer,
-section.guise-box.guise-stacked>header, section.guise-box.guise-stacked>footer,
-.guise-skeleton .box>.card, .guise-skeleton .box>.concise,
-.guise-box>.guise-card, .guise-box>.guise-concise {
+.guise-skeleton section.layout-flex.along-block>header, .guise-skeleton section.layout-flex.along-block>footer,
+section.guise-layout-flex.guise-along-block>header, section.guise-layout-flex.guise-along-block>footer,
+.guise-skeleton .layout-flex>.lay-fitted,
+.guise-layout-flex>.guise-lay-fitted {
 	flex-basis: auto;
 	flex-grow: 0;
 }
 
-.guise-skeleton .box.focalized,
-.guise-box.guise-focalized {
+.guise-skeleton .layout-flex.focalized,
+.guise-layout-flex.guise-focalized {
 	justify-content: center;
 }
 
-.guise-skeleton .panel, .guise-skeleton .board,
-.guise-panel, .guise-board {
-	padding: 1em;
-}
+/* # tile layout */
 
-.guise-skeleton .board.box:not(.focalized),
-.guise-board.guise-box:not(.guise-focalized) {
+.guise-skeleton .layout-tile,
+.guise-layout-tile {
+	display: flex;
 	justify-content: space-around;
-}
-
-.guise-skeleton .board>*,
-.guise-board>* {
-	margin: 0.5em;
 }
 
 /* # lid */

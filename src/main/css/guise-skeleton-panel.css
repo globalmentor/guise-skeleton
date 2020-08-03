@@ -1,7 +1,7 @@
 /*
- * Guise™ Skeleton Card x.x.x-SNAPSHOT (https://guise.io/skeleton/)
+ * Guise™ Skeleton Panel x.x.x-SNAPSHOT (https://guise.io/skeleton/)
  *
- * Copyright © 2018 GlobalMentor, Inc. (http://www.globalmentor.com/)
+ * Copyright © 2020 GlobalMentor, Inc. (http://www.globalmentor.com/)
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,18 +17,16 @@
  */
 
 :root {
-	--card-background-color: white;
-	--card-border-color: var(--component-border-color);
-	--card-border-style: solid;
-	--card-border-width: 1px;
+	--panel-padding-top: 1em;
+	--panel-padding-right: 1em;
+	--panel-padding-bottom: 1em;
+	--panel-padding-left: 1em;
 }
 
-.guise-skeleton .card,
-.guise-card {
-	background-color: var(--card-background-color);
-	border-style: var(--card-border-style);
-	border-width: var(--card-border-width);
-	border-color: var(--card-border-color);
-	flex-basis: auto;
-	flex-grow: 0;
+.guise-skeleton .panel,
+.guise-panel {
+	padding-top: var(--panel-padding-top);
+	padding-right: var(--panel-padding-right);
+	padding-bottom: var(--panel-padding-bottom);
+	padding-left: var(--panel-padding-left);
 }

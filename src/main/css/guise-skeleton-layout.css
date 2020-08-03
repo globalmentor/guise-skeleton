@@ -75,6 +75,12 @@ section.guise-layout-flex.guise-along-block>header, section.guise-layout-flex.gu
 	align-items: center;
 }
 
+.layout-marquee>h1, .layout-marquee>h2, .layout-marquee>h3,
+.layout-marquee>h4, .layout-marquee>h5, .layout-marquee>h6,
+.layout-marquee>p {
+	text-align: center;
+}
+
 /* # tile layout */
 
 .guise-skeleton .layout-tile,

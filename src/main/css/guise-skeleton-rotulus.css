@@ -27,22 +27,26 @@
 	--guise-rotulus-stripe-background-color-default: initial;
 }
 
-.rotulus {
+.guise-skeleton .rotulus,
+.guise-rotulus {
 	padding-left: var(--guise-rotulus-padding-left);
 	padding-right: var(--guise-rotulus-padding-right);
 }
 
-.rotulus>section {
+.guise-skeleton .rotulus>section,
+.guise-rotulus>section {
 	padding-top: var(--guise-rotulus-section-padding-top);
 	padding-right: var(--guise-rotulus-section-padding-right);
 	padding-bottom: var(--guise-rotulus-section-padding-bottom);
 	padding-left: var(--guise-rotulus-section-padding-left);
 }
 
-.rotulus>section:nth-child(even) {
+.guise-skeleton .rotulus>section:nth-child(even),
+.guise-rotulus>section:nth-child(even) {
 	background-color: var(--guise-rotulus-stripe-background-color-default);
 }
 
-.rotulus.is-striped>section:nth-child(even) {
+.guise-skeleton .rotulus.is-striped>section:nth-child(even),
+.guise-rotulus.is-striped>section:nth-child(even) {
 	background-color: var(--guise-rotulus-stripe-background-color);
 }

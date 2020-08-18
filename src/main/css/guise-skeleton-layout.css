@@ -30,6 +30,7 @@
 .guise-skeleton .layout-brick,
 .guise-layout-brick {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: flex-start;
 }
 
@@ -86,6 +87,7 @@ section.guise-layout-flex.guise-along-block>header, section.guise-layout-flex.gu
 .guise-skeleton .layout-tile,
 .guise-layout-tile {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 }
 

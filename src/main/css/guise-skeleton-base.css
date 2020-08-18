@@ -48,6 +48,11 @@ aside {
 	margin-left: 0.5rem;
 }
 
+blockquote {
+	/* Reboot v4.1.3 only sets `margin: 0 0 1rem;`. */
+	margin-left: 2rem;
+}
+
 figure {
 	/* Reboot v4.1.3 only sets `margin: 0 0 1rem;`. */
 	margin-right: 0.5rem;

@@ -29,14 +29,13 @@
 	--color-error: red;
 	--color-error-light: pink;
 
-	--component-background-color: #F8F8F8;
-	--component-border-color: #D6D6D6;
-	--component-accent-color: #E7E7E7;
-	--component-highlight-background-color: var(--component-accent-color);
-	--component-active-background-color: var(--component-accent-color);
-	--heading-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
-	--guise-overlay-background-color: rgba(0, 0, 0, 0.5);
+	--guise-skeleton-component-background-color: #F8F8F8;
+	--guise-skeleton-component-border-color: #D6D6D6;
+	--guise-skeleton-component-accent-color: #E7E7E7;
+	--guise-skeleton-component-highlight-background-color: var(--guise-skeleton-component-accent-color);
+	--guise-skeleton-component-active-background-color: var(--guise-skeleton-component-accent-color);
+	--guise-skeleton-heading-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	--guise-skeleton-overlay-background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Bootstrap Reboot tweaks */
@@ -60,56 +59,56 @@ figure {
 }
 
 .guise-skeleton .banner, .guise-skeleton .hero,
-.guise-banner, .guise-hero {
+.skelt-banner, .skelt-hero {
 	font-size: calc(0.5em + 1vw);
 }
 
 .guise-skeleton .hero:not(.banner),
-.guise-hero:not(.banner) {
+.skelt-hero:not(.skelt-banner) {
 	width: 100vw;
 	height: 100vh;
 }
 
 body.guise-skeleton header .banner,
-body header .guise-banner {
+body header .skelt-banner {
 	padding-left: 1em;
 	padding-right: 1em;
 	overflow: auto;
 }
 
 body.guise-skeleton header .banner.hero,
-body header .guise-banner.guise-hero {
+body header .skelt-banner.skelt-hero {
 	min-height: 16rem;
 }
 
 .guise-skeleton main,
-main.guise-main {
+main.skelt-main {
 	padding-left: 1em;
 	padding-right: 1em;
 }
 
 .guise-skeleton footer,
-footer.guise-footer {
+footer.skelt-footer {
 	padding: 1em;
 }
 
 .guise-skeleton h1, .guise-skeleton h2, .guise-skeleton h3, .guise-skeleton h4, .guise-skeleton h5, .guise-skeleton h6,
-h1.guise-h1, h2.guise-h2, h3.guise-h3, h4.guise-h4, h5.guise-h5, h6.guise-h6 {
-	font-family: var(--heading-font-family);
+h1.skelt-h1, h2.skelt-h2, h3.skelt-h3, h4.skelt-h4, h5.skelt-h5, h6.skelt-h6 {
+	font-family: var(--guise-skeleton-heading-font-family);
 	font-weight: 500;
 }
 
 .guise-skeleton .title:not(.token),
-.guise-title {
+.skelt-title {
 	font-size: 400%;
 }
 
 .guise-skeleton .subtitle:not(.token),
-.guise-subtitle {
+.skelt-subtitle {
 	font-size: 200%;
 }
 
 .guise-skeleton .overlay,
-.guise-overlay {
-	background-color: var(--guise-overlay-background-color);
+.skelt-overlay {
+	background-color: var(--guise-skeleton-overlay-background-color);
 }

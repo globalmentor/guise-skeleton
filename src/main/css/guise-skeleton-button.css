@@ -19,19 +19,19 @@
 /* see https://github.com/pure-css/pure/tree/master/src/buttons */
 
 :root {
-	--button-font-family: var(--menu-font-family, var(--heading-font-family));
+	--guise-skeleton-button-font-family: var(--guise-skeleton-menu-font-family, var(--guise-skeleton-heading-font-family));
 }
 
 .guise-skeleton button, .guise-skeleton a.button,
-button.guise-button, a.guise-button {
+button.skelt-button, a.skelt-button {
 	display: inline-block;
 	box-sizing: border-box;
 	border: none rgba(0, 0, 0, 0);
 	border-radius: 2px;
 	padding: 0.5em 1em;
 	color: rgba(0, 0, 0, 0.80);
-	background-color: var(--component-accent-color);
-	font-family: var(--button-font-family);
+	background-color: var(--skelt-skeleton-component-accent-color);
+	font-family: var(--skelt-skeleton-button-font-family);
 	line-height: normal;
 	text-align: center;
 	text-decoration: none;
@@ -42,22 +42,22 @@ button.guise-button, a.guise-button {
 }
 
 .guise-skeleton button:hover, .guise-skeleton a.button:hover, .guise-skeleton button:focus, .guise-skeleton a.button:focus,
-button.guise-button:hover, a.guise-button:hover, button.guise-button:focus, a.guise-button:focus {
+button.skelt-button:hover, a.skelt-button:hover, button.skelt-button:focus, a.skelt-button:focus {
 	background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.15));
 }
 
 .guise-skeleton button:focus, .guise-skeleton a.button:focus,
-button.guise-button:focus, a.guise-button:focus {
+button.skelt-button:focus, a.skelt-button:focus {
 	outline: 0;
 }
 
 .guise-skeleton button:active, .guise-skeleton a.button:active,
-button.guise-button:active, a.guise-button:active {
+button.skelt-button:active, a.skelt-button:active {
 	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.20) inset;
 }
 
 .guise-skeleton button[disabled],
-button.guise-button[disabled] {
+button.skelt-button[disabled] {
 	border: none;
 	background-image: none;
 	opacity: 0.40;
@@ -67,31 +67,31 @@ button.guise-button[disabled] {
 }
 
 .guise-skeleton button.primary, .guise-skeleton a.button.primary,
-button.guise-button.primary, a.guise-button.primary {
+button.skelt-button.primary, a.skelt-button.primary {
 	background-color: var(--color-primary);
 	color: white;
 }
 
 .guise-skeleton button.success, .guise-skeleton a.button.success,
-button.guise-button.success, a.guise-button.success {
+button.skelt-button.success, a.skelt-button.success {
 	background-color: var(--color-success);
 	color: white;
 }
 
 .guise-skeleton button.warning, .guise-skeleton a.button.warning,
-button.guise-button.warning, a.guise-button.warning {
+button.skelt-button.warning, a.skelt-button.warning {
 	background-color: var(--color-warning);
 	color: white;
 }
 
 .guise-skeleton button.error, .guise-skeleton a.button.error,
-button.guise-button.error, a.guise-button.error {
+button.skelt-button.error, a.skelt-button.error {
 	background-color: var(--color-error);
 	color: white;
 }
 
 .guise-skeleton .box>button, .guise-skeleton .box>a.button,
-.box>button.guise-button, .box>a.guise-button {
+.box>button.skelt-button, .box>a.skelt-button {
 	flex-basis: auto;
 	flex-grow: 0;
 }

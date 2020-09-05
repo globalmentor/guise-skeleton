@@ -19,76 +19,76 @@
 /* see https://github.com/pure-css/pure/tree/master/src/tables */
 
 :root {
-	--table-border-color: var(--component-border-color);
-	--table-header-background-color: var(--component-accent-color);
-	--table-header-font-family: var(--heading-font-family);
-	--table-highlight-background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
-	--table-stripe-background-color: var(--component-background-color);
+	--guise-skeleton-table-border-color: var(--guise-skeleton-component-border-color);
+	--guise-skeleton-table-header-background-color: var(--guise-skeleton-component-accent-color);
+	--guise-skeleton-table-header-font-family: var(--guise-skeleton-heading-font-family);
+	--guise-skeleton-table-highlight-background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+	--guise-skeleton-table-stripe-background-color: var(--guise-skeleton-component-background-color);
 }
 
 .guise-skeleton table,
-table.guise-table {
-	border: 1px solid var(--table-border-color);
+table.skelt-table {
+	border: 1px solid var(--guise-skeleton-table-border-color);
 }
 
 .guise-skeleton caption,
-table.guise-table>caption {
-	font-family: var(--table-header-font-family);
+table.skelt-table>caption {
+	font-family: var(--guise-skeleton-table-header-font-family);
 	/* override Reboot */
 	caption-side: unset;
 }
 
 .guise-skeleton td, .guise-skeleton th,
-table.guise-table>tr>td, table.guise-table>thead>tr>td, table.guise-table>tbody>tr>td, table.guise-table>tfoot>tr>td, table.guise-table>th, table.guise-table>thead>th, table.guise-table>tbody>th, table.guise-table>tfoot>th {
-	border-left: 1px solid var(--table-border-color);
+table.skelt-table>tr>td, table.skelt-table>thead>tr>td, table.skelt-table>tbody>tr>td, table.skelt-table>tfoot>tr>td, table.skelt-table>th, table.skelt-table>thead>th, table.skelt-table>tbody>th, table.skelt-table>tfoot>th {
+	border-left: 1px solid var(--guise-skeleton-table-border-color);
 	border-width: 0 0 0 1px;
 	overflow: visible;
 	padding: 0.5em 1em;
 }
 
 .guise-skeleton thead, .guise-skeleton table th,
-table.guise-table>thead, table.guise-table>th, table.guise-table>thead>th {
-	background-color: var(--table-header-background-color);
+table.skelt-table>thead, table.skelt-table>th, table.skelt-table>thead>th {
+	background-color: var(--guise-skeleton-table-header-background-color);
 	text-align: left;
 	vertical-align: bottom;
 }
 
 /* tables: striped */
 .guise-skeleton tbody tr:nth-child(even),
-table.guise-table>tbody tr:nth-child(even) {
-	background-color: var(--table-stripe-background-color);
+table.skelt-table>tbody tr:nth-child(even) {
+	background-color: var(--guise-skeleton-table-stripe-background-color);
 }
 
 .guise-skeleton tbody tr:nth-child(even) th,
-table.guise-table>tbody tr:nth-child(even) th {
-	background-color: var(--table-header-background-color);
+table.skelt-table>tbody tr:nth-child(even) th {
+	background-color: var(--guise-skeleton-table-header-background-color);
 }
 
 /* tables: bordered */
 .guise-skeleton td,
-table.guise-table>tr>td, table.guise-table>thead>tr>td, table.guise-table>tbody>tr>td, table.guise-table>tfoot>tr>td {
-	border-bottom: 1px solid var(--table-border-color);
+table.skelt-table>tr>td, table.skelt-table>thead>tr>td, table.skelt-table>tbody>tr>td, table.skelt-table>tfoot>tr>td {
+	border-bottom: 1px solid var(--guise-skeleton-table-border-color);
 }
 
 .guise-skeleton tbody>tr:last-child>th, .guise-skeleton tbody>tr:last-child1,
-table.guise-table>tbody>tr:last-child>th, table.guise-table>tbody>tr:last-child>td {
+table.skelt-table>tbody>tr:last-child>th, table.skelt-table>tbody>tr:last-child>td {
 	border-bottom-width: 0;
 }
 
 /* tables: horizontal borders */
 .guise-skeleton th, .guise-skeleton td,
-table.guise-table>tr>th, table.guise-table>thead>tr>th, table.guise-table>tbody>tr>th, table.guise-table>tfoot>tr>th, table.guise-table>tr>td, table.guise-table>thead>tr>td, table.guise-table>tbody>tr>td, table.guise-table>tfoot>tr>td {
+table.skelt-table>tr>th, table.skelt-table>thead>tr>th, table.skelt-table>tbody>tr>th, table.skelt-table>tfoot>tr>th, table.skelt-table>tr>td, table.skelt-table>thead>tr>td, table.skelt-table>tbody>tr>td, table.skelt-table>tfoot>tr>td {
 	border-width: 0 0 1px 0;
-	border-bottom: 1px solid var(--table-border-color);
+	border-bottom: 1px solid var(--guise-skeleton-table-border-color);
 }
 
 .guise-skeleton tbody>tr:last-child>th, .guise-skeleton tbody>tr:last-child>td,
-table.guise-table>tbody>tr:last-child>th, table.guise-table>tbody>tr:last-child>td {
+table.skelt-table>tbody>tr:last-child>th, table.skelt-table>tbody>tr:last-child>td {
 	border-bottom-width: 0;
 }
 
 /* tables: hover*/
 .guise-skeleton tbody tr:hover, .guise-skeleton tbody tr:hover th,
-table.guise-table>tbody tr:hover, table.guise-table>tbody tr:hover th {
-	background-image: var(--table-highlight-background-image);
+table.skelt-table>tbody tr:hover, table.skelt-table>tbody tr:hover th {
+	background-image: var(--guise-skeleton-table-highlight-background-image);
 }

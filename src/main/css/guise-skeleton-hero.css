@@ -52,9 +52,29 @@
 	height: calc(100vh * var(--guise-skeleton-size-marginal-factor));
 }
 
+.guise-skeleton .hero.min-size-marginal,
+.skelt-hero.min-size-marginal {
+	min-height: calc(100vh * var(--guise-skeleton-size-marginal-factor));
+}
+
+.guise-skeleton .hero.max-size-marginal,
+.skelt-hero.max-size-marginal {
+	max-height: calc(100vh * var(--guise-skeleton-size-marginal-factor));
+}
+
 .guise-skeleton .hero.size-subordinate,
 .skelt-hero.size-subordinate {
 	height: calc(100vh * var(--guise-skeleton-size-subordinate-factor));
+}
+
+.guise-skeleton .hero.min-size-subordinate,
+.skelt-hero.min-size-subordinate {
+	min-height: calc(100vh * var(--guise-skeleton-size-subordinate-factor));
+}
+
+.guise-skeleton .hero.max-size-subordinate,
+.skelt-hero.max-size-subordinate {
+	max-height: calc(100vh * var(--guise-skeleton-size-subordinate-factor));
 }
 
 .guise-skeleton .hero.size-significant,
@@ -62,9 +82,29 @@
 	height: calc(100vh * var(--guise-skeleton-size-significant-factor));
 }
 
+.guise-skeleton .hero.min-size-significant,
+.skelt-hero.min-size-significant {
+	min-height: calc(100vh * var(--guise-skeleton-size-significant-factor));
+}
+
+.guise-skeleton .hero.max-size-significant,
+.skelt-hero.max-size-significant {
+	max-height: calc(100vh * var(--guise-skeleton-size-significant-factor));
+}
+
 .guise-skeleton .hero.size-partial,
 .skelt-hero.size-partial {
 	height: calc(100vh * var(--guise-skeleton-size-partial-factor));
+}
+
+.guise-skeleton .hero.min-size-partial,
+.skelt-hero.min-size-partial {
+	min-height: calc(100vh * var(--guise-skeleton-size-partial-factor));
+}
+
+.guise-skeleton .hero.max-size-partial,
+.skelt-hero.max-size-partial {
+	max-height: calc(100vh * var(--guise-skeleton-size-partial-factor));
 }
 
 .guise-skeleton .hero.size-substantial,
@@ -72,7 +112,27 @@
 	height: calc(100vh * var(--guise-skeleton-size-substantial-factor));
 }
 
+.guise-skeleton .hero.min-size-substantial,
+.skelt-hero.min-size-substantial {
+	min-height: calc(100vh * var(--guise-skeleton-size-substantial-factor));
+}
+
+.guise-skeleton .hero.max-size-substantial,
+.skelt-hero.max-size-substantial {
+	max-height: calc(100vh * var(--guise-skeleton-size-substantial-factor));
+}
+
 .guise-skeleton .hero.size-full,
 .skelt-hero.size-full {
 	height: calc(100vh * var(--guise-skeleton-size-full-factor));
+}
+
+.guise-skeleton .hero.min-size-full,
+.skelt-hero.min-size-full {
+	min-height: calc(100vh * var(--guise-skeleton-size-full-factor));
+}
+
+.guise-skeleton .hero.max-size-full,
+.skelt-hero.max-size-full {
+	max-height: calc(100vh * var(--guise-skeleton-size-full-factor));
 }

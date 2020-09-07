@@ -36,12 +36,18 @@
 	--guise-skeleton-component-active-background-color: var(--guise-skeleton-component-accent-color);
 	--guise-skeleton-heading-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	--guise-skeleton-overlay-background-color: rgba(0, 0, 0, 0.5);
-	--guise-skeleton-size-marginal: 11%;
-	--guise-skeleton-size-subordinate: 22%;
-	--guise-skeleton-size-significant: 33%;
-	--guise-skeleton-size-partial: 50%;
-	--guise-skeleton-size-substantial: 66%;
-	--guise-skeleton-size-full: 100%;
+	--guise-skeleton-size-marginal-factor: 0.11;
+	--guise-skeleton-size-marginal: calc(100% * var(--guise-skeleton-size-marginal-factor));
+	--guise-skeleton-size-subordinate-factor: 0.22;
+	--guise-skeleton-size-subordinate: calc(100% * var(--guise-skeleton-size-subordinate-factor));
+	--guise-skeleton-size-significant-factor: 0.33;
+	--guise-skeleton-size-significant: calc(100% * var(--guise-skeleton-size-significant-factor));
+	--guise-skeleton-size-partial-factor: 0.50;
+	--guise-skeleton-size-partial: calc(100% * var(--guise-skeleton-size-partial-factor));
+	--guise-skeleton-size-substantial-factor: 0.66%;
+	--guise-skeleton-size-substantial: calc(100% * var(--guise-skeleton-size-substantial-factor));
+	--guise-skeleton-size-full-factor: 1.00;
+	--guise-skeleton-size-full: calc(100% * var(--guise-skeleton-size-full-factor));
 }
 
 /* Bootstrap Reboot tweaks */

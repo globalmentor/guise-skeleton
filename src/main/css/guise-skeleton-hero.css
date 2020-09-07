@@ -1,0 +1,138 @@
+/*
+ * Guise™ Skeleton Hero x.x.x-SNAPSHOT (https://guise.io/skeleton/)
+ *
+ * Copyright © 2020 GlobalMentor, Inc. (http://www.globalmentor.com/)
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+:root {
+	--guise-skeleton-hero-font-size: calc(0.5em + 1vw);
+	--guise-skeleton-hero-padding-top: 0;
+	--guise-skeleton-hero-padding-right: 0;
+	--guise-skeleton-hero-padding-bottom: 0;
+	--guise-skeleton-herol-padding-left: 0;
+}
+
+.guise-skeleton .hero,
+.skelt-hero {
+	font-size: var(--guise-skeleton-hero-font-size);
+	width: 100vw;
+	height: calc(100vh * var(--guise-skeleton-size-full-factor));
+	padding-top: var(--guise-skeleton-hero-padding-top);
+	padding-right: var(--guise-skeleton-hero-padding-right);
+	padding-bottom: var(--guise-skeleton-hero-padding-bottom);
+	padding-left: var(--guise-skeleton-hero-padding-left);
+	display: flex;
+	flex-direction: column;
+}
+
+.guise-skeleton .hero>:not(header):not(footer),
+.skelt-hero>:not(header):not(footer) {
+	flex: auto;
+}
+
+.guise-skeleton .hero.size-auto,
+.skelt-hero.size-auto {
+	height: auto;
+}
+
+.guise-skeleton .hero.size-marginal,
+.skelt-hero.size-marginal {
+	height: calc(100vh * var(--guise-skeleton-size-marginal-factor));
+}
+
+.guise-skeleton .hero.min-size-marginal,
+.skelt-hero.min-size-marginal {
+	min-height: calc(100vh * var(--guise-skeleton-size-marginal-factor));
+}
+
+.guise-skeleton .hero.max-size-marginal,
+.skelt-hero.max-size-marginal {
+	max-height: calc(100vh * var(--guise-skeleton-size-marginal-factor));
+}
+
+.guise-skeleton .hero.size-subordinate,
+.skelt-hero.size-subordinate {
+	height: calc(100vh * var(--guise-skeleton-size-subordinate-factor));
+}
+
+.guise-skeleton .hero.min-size-subordinate,
+.skelt-hero.min-size-subordinate {
+	min-height: calc(100vh * var(--guise-skeleton-size-subordinate-factor));
+}
+
+.guise-skeleton .hero.max-size-subordinate,
+.skelt-hero.max-size-subordinate {
+	max-height: calc(100vh * var(--guise-skeleton-size-subordinate-factor));
+}
+
+.guise-skeleton .hero.size-significant,
+.skelt-hero.size-significant {
+	height: calc(100vh * var(--guise-skeleton-size-significant-factor));
+}
+
+.guise-skeleton .hero.min-size-significant,
+.skelt-hero.min-size-significant {
+	min-height: calc(100vh * var(--guise-skeleton-size-significant-factor));
+}
+
+.guise-skeleton .hero.max-size-significant,
+.skelt-hero.max-size-significant {
+	max-height: calc(100vh * var(--guise-skeleton-size-significant-factor));
+}
+
+.guise-skeleton .hero.size-partial,
+.skelt-hero.size-partial {
+	height: calc(100vh * var(--guise-skeleton-size-partial-factor));
+}
+
+.guise-skeleton .hero.min-size-partial,
+.skelt-hero.min-size-partial {
+	min-height: calc(100vh * var(--guise-skeleton-size-partial-factor));
+}
+
+.guise-skeleton .hero.max-size-partial,
+.skelt-hero.max-size-partial {
+	max-height: calc(100vh * var(--guise-skeleton-size-partial-factor));
+}
+
+.guise-skeleton .hero.size-substantial,
+.skelt-hero.size-substantial {
+	height: calc(100vh * var(--guise-skeleton-size-substantial-factor));
+}
+
+.guise-skeleton .hero.min-size-substantial,
+.skelt-hero.min-size-substantial {
+	min-height: calc(100vh * var(--guise-skeleton-size-substantial-factor));
+}
+
+.guise-skeleton .hero.max-size-substantial,
+.skelt-hero.max-size-substantial {
+	max-height: calc(100vh * var(--guise-skeleton-size-substantial-factor));
+}
+
+.guise-skeleton .hero.size-full,
+.skelt-hero.size-full {
+	height: calc(100vh * var(--guise-skeleton-size-full-factor));
+}
+
+.guise-skeleton .hero.min-size-full,
+.skelt-hero.min-size-full {
+	min-height: calc(100vh * var(--guise-skeleton-size-full-factor));
+}
+
+.guise-skeleton .hero.max-size-full,
+.skelt-hero.max-size-full {
+	max-height: calc(100vh * var(--guise-skeleton-size-full-factor));
+}

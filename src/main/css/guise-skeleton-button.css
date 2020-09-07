@@ -30,8 +30,8 @@ button.skelt-button, a.skelt-button {
 	border-radius: 2px;
 	padding: 0.5em 1em;
 	color: rgba(0, 0, 0, 0.80);
-	background-color: var(--skelt-skeleton-component-accent-color);
-	font-family: var(--skelt-skeleton-button-font-family);
+	background-color: var(--guise-skeleton-component-accent-color);
+	font-family: var(--guise-skeleton-button-font-family);
 	line-height: normal;
 	text-align: center;
 	text-decoration: none;

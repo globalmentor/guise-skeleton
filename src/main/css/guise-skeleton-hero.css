@@ -76,15 +76,3 @@
 .skelt-hero.size-full {
 	height: calc(100vh * var(--guise-skeleton-size-full-factor));
 }
-
-body.guise-skeleton header .banner,
-body header .skelt-banner {
-	padding-left: 1em;
-	padding-right: 1em;
-	overflow: auto;
-}
-
-body.guise-skeleton header .banner.hero,
-body header .skelt-banner.skelt-hero {
-	min-height: 16rem;
-}

@@ -16,15 +16,6 @@
  * limitations under the License.
  */
 
-:root {
-	--guise-skeleton-size-marginal: 11%;
-	--guise-skeleton-size-subordinate: 22%;
-	--guise-skeleton-size-significant: 33%;
-	--guise-skeleton-size-partial: 50%;
-	--guise-skeleton-size-substantial: 66%;
-	--guise-skeleton-size-full: 100%;
-}
-
 /* # brick layout */
 
 .guise-skeleton .layout-brick,

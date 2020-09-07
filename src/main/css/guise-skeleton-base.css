@@ -70,29 +70,6 @@ figure {
 	margin-left: 0.5rem;
 }
 
-.guise-skeleton .banner, .guise-skeleton .hero,
-.skelt-banner, .skelt-hero {
-	font-size: calc(0.5em + 1vw);
-}
-
-.guise-skeleton .hero:not(.banner),
-.skelt-hero:not(.skelt-banner) {
-	width: 100vw;
-	height: 100vh;
-}
-
-body.guise-skeleton header .banner,
-body header .skelt-banner {
-	padding-left: 1em;
-	padding-right: 1em;
-	overflow: auto;
-}
-
-body.guise-skeleton header .banner.hero,
-body header .skelt-banner.skelt-hero {
-	min-height: 16rem;
-}
-
 .guise-skeleton main,
 main.skelt-main {
 	padding-left: 1em;

@@ -76,11 +76,6 @@ main.skelt-main {
 	padding-right: 1em;
 }
 
-.guise-skeleton footer,
-footer.skelt-footer {
-	padding: 1em;
-}
-
 .guise-skeleton h1, .guise-skeleton h2, .guise-skeleton h3, .guise-skeleton h4, .guise-skeleton h5, .guise-skeleton h6,
 h1.skelt-h1, h2.skelt-h2, h3.skelt-h3, h4.skelt-h4, h5.skelt-h5, h6.skelt-h6 {
 	font-family: var(--guise-skeleton-heading-font-family);

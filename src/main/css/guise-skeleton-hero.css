@@ -33,13 +33,6 @@
 	padding-right: var(--guise-skeleton-hero-padding-right);
 	padding-bottom: var(--guise-skeleton-hero-padding-bottom);
 	padding-left: var(--guise-skeleton-hero-padding-left);
-	display: flex;
-	flex-direction: column;
-}
-
-.guise-skeleton .hero>:not(header):not(footer),
-.skelt-hero>:not(header):not(footer) {
-	flex: auto;
 }
 
 .guise-skeleton .hero.size-auto,

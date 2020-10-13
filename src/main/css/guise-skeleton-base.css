@@ -44,7 +44,7 @@
 	--guise-skeleton-size-significant: calc(100% * var(--guise-skeleton-size-significant-factor));
 	--guise-skeleton-size-partial-factor: 0.50;
 	--guise-skeleton-size-partial: calc(100% * var(--guise-skeleton-size-partial-factor));
-	--guise-skeleton-size-substantial-factor: 0.66%;
+	--guise-skeleton-size-substantial-factor: 0.66;
 	--guise-skeleton-size-substantial: calc(100% * var(--guise-skeleton-size-substantial-factor));
 	--guise-skeleton-size-full-factor: 1.00;
 	--guise-skeleton-size-full: calc(100% * var(--guise-skeleton-size-full-factor));

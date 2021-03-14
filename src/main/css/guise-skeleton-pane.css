@@ -18,7 +18,7 @@
 
  :root {
 	--guise-skeleton-pane-height: 18vw;
-	--guise-skeleton-pane-min-height: 10rem;
+	--guise-skeleton-pane-min-height: 8rem;
 	--guise-skeleton-pane-max-height: 16rem;
 }
 

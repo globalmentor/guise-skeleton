@@ -27,7 +27,7 @@
 .guise-skeleton .hero,
 .skelt-hero {
 	font-size: var(--guise-skeleton-hero-font-size);
-	width: 100vw;
+	width: 100%;
 	height: calc(100vh * var(--guise-skeleton-size-full-factor));
 	padding-top: var(--guise-skeleton-hero-padding-top);
 	padding-right: var(--guise-skeleton-hero-padding-right);

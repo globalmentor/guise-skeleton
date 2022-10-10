@@ -70,7 +70,7 @@ table.skelt-table>tr>td, table.skelt-table>thead>tr>td, table.skelt-table>tbody>
 	border-bottom: 1px solid var(--guise-skeleton-table-border-color);
 }
 
-.guise-skeleton tbody>tr:last-child>th, .guise-skeleton tbody>tr:last-child1,
+.guise-skeleton tbody>tr:last-child>th, .guise-skeleton tbody>tr:last-child,
 table.skelt-table>tbody>tr:last-child>th, table.skelt-table>tbody>tr:last-child>td {
 	border-bottom-width: 0;
 }

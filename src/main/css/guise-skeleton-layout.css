@@ -264,7 +264,7 @@ section.skelt-layout-flex.skelt-along-block>header, section.skelt-layout-flex.sk
 	float: right;
 }
 
-.guise-skeleton .float-start.size-marginal, .guise-skeleton float-end.size-marginal,
+.guise-skeleton .float-start.size-marginal, .guise-skeleton .float-end.size-marginal,
 .skelt-float-start.skelt-size-marginal, .skelt-float-end.skelt-size-marginal {
 	width: var(--guise-skeleton-size-marginal);
 }

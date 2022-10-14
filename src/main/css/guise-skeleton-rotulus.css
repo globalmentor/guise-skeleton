@@ -21,8 +21,8 @@
 	--guise-skeleton-rotulus-padding-right: 0;
 	--guise-skeleton-rotulus-section-padding-top: 4em;
 	--guise-skeleton-rotulus-section-padding-right: 2em;
-	--guise-skeleton-rotulus-section-padding-bottom: 2em;
-	--guise-skeleton-rotulus-section-padding-left: 4em;
+	--guise-skeleton-rotulus-section-padding-bottom: 4em;
+	--guise-skeleton-rotulus-section-padding-left: 2em;
 	--guise-skeleton-rotulus-stripe-background-color: var(--guise-skeleton-component-background-color);
 	--guise-skeleton-rotulus-stripe-background-color-default: initial;
 }

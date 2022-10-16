@@ -53,7 +53,6 @@ ul.skelt-menu, ul.skelt-menu ul {
 .guise-skeleton ul.menu li,
 ul.skelt-menu li {
 	display: inline-block;
-	float: left;
 }
 
 .guise-skeleton ul.menu li a,
@@ -116,7 +115,6 @@ ul.skelt-menu li a:not(:last-child)::after {
 .guise-skeleton ul.menu li ul li,
 ul.skelt-menu li ul li {
 	display: block;
-	float: none;
 	line-height: 3.5em;
 }
 

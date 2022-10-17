@@ -123,14 +123,28 @@ table.skelt-table>tr>td:not(:first-child), table.skelt-table>thead>tr>td:not(:fi
 	border-left-style: var(--guise-skeleton-table-cell-border-style);
 }
 
+.guise-skeleton th[rowspan]:not(:last-child),
+.guise-skeleton td[rowspan]:not(:last-child),
+table.skelt-table>tr>th[rowspan]:not(:last-child), table.skelt-table>thead>tr>th[rowspan]:not(:last-child), table.skelt-table>tbody>tr>th[rowspan]:not(:last-child), table.skelt-table>tfoot>tr>th[rowspan]:not(:last-child),
+table.skelt-table>tr>td[rowspan]:not(:last-child), table.skelt-table>thead>tr>td[rowspan]:not(:last-child), table.skelt-table>tbody>tr>td[rowspan]:not(:last-child), table.skelt-table>tfoot>tr>td[rowspan]:not(:last-child) {
+	border-right-style: var(--guise-skeleton-table-cell-border-style);
+}
+
 /* #### cell horizontal borders */
 
 /* header rows */
-.guise-skeleton table>thead:not(:last-child)>tr>th,
-.guise-skeleton table>thead:not(:last-child)>tr>td,
-table.skelt-table>thead:not(:last-child)>tr>th,
-table.skelt-table>thead:not(:last-child)>tr>td {
+.guise-skeleton table>thead>tr>th,
+.guise-skeleton table>thead>tr>td,
+table.skelt-table>thead>tr>th,
+table.skelt-table>thead>tr>td {
 	border-bottom-style: var(--guise-skeleton-table-cell-border-style);
+}
+
+.guise-skeleton table>thead>tr:not(:first-child)>th[colspan],
+.guise-skeleton table>thead>tr:not(:first-child)>td[colspan],
+table.skelt-table>thead>tr:not(:first-child)>th[colspan],
+table.skelt-table>thead>tr:not(:first-child)>td[colspan] {
+	border-top-style: var(--guise-skeleton-table-cell-border-style);
 }
 
 /* bare rows and body rows */
@@ -141,12 +155,26 @@ table.skelt-table>tr:not(:first-of-type)>td, table.skelt-table>tbody>tr:not(:fir
 	border-top-style: var(--guise-skeleton-table-cell-border-style);
 }
 
+.guise-skeleton table>tr:not(:last-of-type)>th[colspan], .guise-skeleton table>tbody>tr:not(:last-child)>th[colspan],
+.guise-skeleton table>tr:not(:last-of-type)>td[colspan], .guise-skeleton table>tbody>tr:not(:last-child)>td[colspan],
+table.skelt-table>tr:not(:last-of-type)>th[colspan], table.skelt-table>tbody>tr:not(:last-child)>th[colspan],
+table.skelt-table>tr:not(:last-of-type)>td[colspan], table.skelt-table>tbody>tr:not(:last-child)>td[colspan] {
+	border-bottom-style: var(--guise-skeleton-table-cell-border-style);
+}
+
 /* footer rows */
-.guise-skeleton table>tfoot:not(:first-child)>tr>th,
-.guise-skeleton table>tfoot:not(:first-child)>tr>td,
-table.skelt-table>tfoot:not(:first-child)>tr>th,
-table.skelt-table>tfoot:not(:first-child)>tr>td {
+.guise-skeleton table>tfoot>tr>th,
+.guise-skeleton table>tfoot>tr>td,
+table.skelt-table>tfoot>tr>th,
+table.skelt-table>tfoot>tr>td {
 	border-top-style: var(--guise-skeleton-table-cell-border-style);
+}
+
+.guise-skeleton table>tfoot>tr:not(:last-child)>th[colspan],
+.guise-skeleton table>tfoot>tr:not(:last-child)>td[colspan],
+table.skelt-table>tfoot>tr:not(:last-child)>th[colspan],
+table.skelt-table>tfoot>tr:not(:last-child)>td[colspan] {
+	border-bottom-style: var(--guise-skeleton-table-cell-border-style);
 }
 
 /* ## hover*/

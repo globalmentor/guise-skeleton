@@ -17,22 +17,22 @@
  */
 
 :root {
-	--guise-skeleton-hero-font-size: calc(0.5em + 1vw);
-	--guise-skeleton-hero-padding-top: 0;
-	--guise-skeleton-hero-padding-right: 0;
-	--guise-skeleton-hero-padding-bottom: 0;
-	--guise-skeleton-herol-padding-left: 0;
+	--skelt-hero-font-size: calc(0.5em + 1vw);
+	--skelt-hero-padding-top: 0;
+	--skelt-hero-padding-right: 0;
+	--skelt-hero-padding-bottom: 0;
+	--skelt-herol-padding-left: 0;
 }
 
 .guise-skeleton .hero,
 .skelt-hero {
-	font-size: var(--guise-skeleton-hero-font-size);
+	font-size: var(--skelt-hero-font-size);
 	width: 100%;
-	height: calc(100vh * var(--guise-skeleton-size-full-factor));
-	padding-top: var(--guise-skeleton-hero-padding-top);
-	padding-right: var(--guise-skeleton-hero-padding-right);
-	padding-bottom: var(--guise-skeleton-hero-padding-bottom);
-	padding-left: var(--guise-skeleton-hero-padding-left);
+	height: calc(100vh * var(--skelt-size-full-factor));
+	padding-top: var(--skelt-hero-padding-top);
+	padding-right: var(--skelt-hero-padding-right);
+	padding-bottom: var(--skelt-hero-padding-bottom);
+	padding-left: var(--skelt-hero-padding-left);
 }
 
 .guise-skeleton .hero.size-auto,
@@ -42,90 +42,90 @@
 
 .guise-skeleton .hero.size-marginal,
 .skelt-hero.size-marginal {
-	height: calc(100vh * var(--guise-skeleton-size-marginal-factor));
+	height: calc(100vh * var(--skelt-size-marginal-factor));
 }
 
 .guise-skeleton .hero.min-size-marginal,
 .skelt-hero.min-size-marginal {
-	min-height: calc(100vh * var(--guise-skeleton-size-marginal-factor));
+	min-height: calc(100vh * var(--skelt-size-marginal-factor));
 }
 
 .guise-skeleton .hero.max-size-marginal,
 .skelt-hero.max-size-marginal {
-	max-height: calc(100vh * var(--guise-skeleton-size-marginal-factor));
+	max-height: calc(100vh * var(--skelt-size-marginal-factor));
 }
 
 .guise-skeleton .hero.size-subordinate,
 .skelt-hero.size-subordinate {
-	height: calc(100vh * var(--guise-skeleton-size-subordinate-factor));
+	height: calc(100vh * var(--skelt-size-subordinate-factor));
 }
 
 .guise-skeleton .hero.min-size-subordinate,
 .skelt-hero.min-size-subordinate {
-	min-height: calc(100vh * var(--guise-skeleton-size-subordinate-factor));
+	min-height: calc(100vh * var(--skelt-size-subordinate-factor));
 }
 
 .guise-skeleton .hero.max-size-subordinate,
 .skelt-hero.max-size-subordinate {
-	max-height: calc(100vh * var(--guise-skeleton-size-subordinate-factor));
+	max-height: calc(100vh * var(--skelt-size-subordinate-factor));
 }
 
 .guise-skeleton .hero.size-significant,
 .skelt-hero.size-significant {
-	height: calc(100vh * var(--guise-skeleton-size-significant-factor));
+	height: calc(100vh * var(--skelt-size-significant-factor));
 }
 
 .guise-skeleton .hero.min-size-significant,
 .skelt-hero.min-size-significant {
-	min-height: calc(100vh * var(--guise-skeleton-size-significant-factor));
+	min-height: calc(100vh * var(--skelt-size-significant-factor));
 }
 
 .guise-skeleton .hero.max-size-significant,
 .skelt-hero.max-size-significant {
-	max-height: calc(100vh * var(--guise-skeleton-size-significant-factor));
+	max-height: calc(100vh * var(--skelt-size-significant-factor));
 }
 
 .guise-skeleton .hero.size-partial,
 .skelt-hero.size-partial {
-	height: calc(100vh * var(--guise-skeleton-size-partial-factor));
+	height: calc(100vh * var(--skelt-size-partial-factor));
 }
 
 .guise-skeleton .hero.min-size-partial,
 .skelt-hero.min-size-partial {
-	min-height: calc(100vh * var(--guise-skeleton-size-partial-factor));
+	min-height: calc(100vh * var(--skelt-size-partial-factor));
 }
 
 .guise-skeleton .hero.max-size-partial,
 .skelt-hero.max-size-partial {
-	max-height: calc(100vh * var(--guise-skeleton-size-partial-factor));
+	max-height: calc(100vh * var(--skelt-size-partial-factor));
 }
 
 .guise-skeleton .hero.size-substantial,
 .skelt-hero.size-substantial {
-	height: calc(100vh * var(--guise-skeleton-size-substantial-factor));
+	height: calc(100vh * var(--skelt-size-substantial-factor));
 }
 
 .guise-skeleton .hero.min-size-substantial,
 .skelt-hero.min-size-substantial {
-	min-height: calc(100vh * var(--guise-skeleton-size-substantial-factor));
+	min-height: calc(100vh * var(--skelt-size-substantial-factor));
 }
 
 .guise-skeleton .hero.max-size-substantial,
 .skelt-hero.max-size-substantial {
-	max-height: calc(100vh * var(--guise-skeleton-size-substantial-factor));
+	max-height: calc(100vh * var(--skelt-size-substantial-factor));
 }
 
 .guise-skeleton .hero.size-full,
 .skelt-hero.size-full {
-	height: calc(100vh * var(--guise-skeleton-size-full-factor));
+	height: calc(100vh * var(--skelt-size-full-factor));
 }
 
 .guise-skeleton .hero.min-size-full,
 .skelt-hero.min-size-full {
-	min-height: calc(100vh * var(--guise-skeleton-size-full-factor));
+	min-height: calc(100vh * var(--skelt-size-full-factor));
 }
 
 .guise-skeleton .hero.max-size-full,
 .skelt-hero.max-size-full {
-	max-height: calc(100vh * var(--guise-skeleton-size-full-factor));
+	max-height: calc(100vh * var(--skelt-size-full-factor));
 }

@@ -17,18 +17,18 @@
  */
 
  :root {
-	--guise-skeleton-avatar-width: 9rem;
-	--guise-skeleton-avatar-height: 9rem;
-	--guise-skeleton-avatar-clip-path: circle();
+	--skelt-avatar-width: 9rem;
+	--skelt-avatar-height: 9rem;
+	--skelt-avatar-clip-path: circle();
 }
 
 /* thumbnail */
 
 .guise-skeleton img.avatar,
 img.skelt-avatar {
-	clip-path: var(--guise-skeleton-avatar-clip-path);
-	width: var(--guise-skeleton-avatar-width);
-	height: var(--guise-skeleton-avatar-height);
+	clip-path: var(--skelt-avatar-clip-path);
+	width: var(--skelt-avatar-width);
+	height: var(--skelt-avatar-height);
 	object-fit: scale-down;
 	object-position: center;
 }

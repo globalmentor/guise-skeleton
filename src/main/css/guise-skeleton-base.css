@@ -29,25 +29,25 @@
 	--color-error: red;
 	--color-error-light: pink;
 
-	--guise-skeleton-component-background-color: #F8F8F8;
-	--guise-skeleton-component-border-color: #D6D6D6;
-	--guise-skeleton-component-accent-color: #E7E7E7;
-	--guise-skeleton-component-highlight-background-color: var(--guise-skeleton-component-accent-color);
-	--guise-skeleton-component-active-background-color: var(--guise-skeleton-component-accent-color);
-	--guise-skeleton-heading-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	--guise-skeleton-overlay-background-color: rgba(0, 0, 0, 0.5);
-	--guise-skeleton-size-marginal-factor: 0.11;
-	--guise-skeleton-size-marginal: calc(100% * var(--guise-skeleton-size-marginal-factor));
-	--guise-skeleton-size-subordinate-factor: 0.22;
-	--guise-skeleton-size-subordinate: calc(100% * var(--guise-skeleton-size-subordinate-factor));
-	--guise-skeleton-size-significant-factor: 0.33;
-	--guise-skeleton-size-significant: calc(100% * var(--guise-skeleton-size-significant-factor));
-	--guise-skeleton-size-partial-factor: 0.50;
-	--guise-skeleton-size-partial: calc(100% * var(--guise-skeleton-size-partial-factor));
-	--guise-skeleton-size-substantial-factor: 0.66;
-	--guise-skeleton-size-substantial: calc(100% * var(--guise-skeleton-size-substantial-factor));
-	--guise-skeleton-size-full-factor: 1.00;
-	--guise-skeleton-size-full: calc(100% * var(--guise-skeleton-size-full-factor));
+	--skelt-component-background-color: #F8F8F8;
+	--skelt-component-border-color: #D6D6D6;
+	--skelt-component-accent-color: #E7E7E7;
+	--skelt-component-highlight-background-color: var(--skelt-component-accent-color);
+	--skelt-component-active-background-color: var(--skelt-component-accent-color);
+	--skelt-heading-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	--skelt-overlay-background-color: rgba(0, 0, 0, 0.5);
+	--skelt-size-marginal-factor: 0.11;
+	--skelt-size-marginal: calc(100% * var(--skelt-size-marginal-factor));
+	--skelt-size-subordinate-factor: 0.22;
+	--skelt-size-subordinate: calc(100% * var(--skelt-size-subordinate-factor));
+	--skelt-size-significant-factor: 0.33;
+	--skelt-size-significant: calc(100% * var(--skelt-size-significant-factor));
+	--skelt-size-partial-factor: 0.50;
+	--skelt-size-partial: calc(100% * var(--skelt-size-partial-factor));
+	--skelt-size-substantial-factor: 0.66;
+	--skelt-size-substantial: calc(100% * var(--skelt-size-substantial-factor));
+	--skelt-size-full-factor: 1.00;
+	--skelt-size-full: calc(100% * var(--skelt-size-full-factor));
 }
 
 /* # Bootstrap Reboot tweaks */
@@ -85,7 +85,7 @@ main.skelt-main {
 
 .guise-skeleton h1, .guise-skeleton h2, .guise-skeleton h3, .guise-skeleton h4, .guise-skeleton h5, .guise-skeleton h6,
 h1.skelt-h1, h2.skelt-h2, h3.skelt-h3, h4.skelt-h4, h5.skelt-h5, h6.skelt-h6 {
-	font-family: var(--guise-skeleton-heading-font-family);
+	font-family: var(--skelt-heading-font-family);
 	font-weight: 500;
 }
 
@@ -101,5 +101,5 @@ h1.skelt-h1, h2.skelt-h2, h3.skelt-h3, h4.skelt-h4, h5.skelt-h5, h6.skelt-h6 {
 
 .guise-skeleton .overlay,
 .skelt-overlay {
-	background-color: var(--guise-skeleton-overlay-background-color);
+	background-color: var(--skelt-overlay-background-color);
 }

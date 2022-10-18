@@ -17,24 +17,24 @@
  */
 
  :root {
-	--guise-skeleton-thumbnail-width: 20vw;
-	--guise-skeleton-thumbnail-height: 20vw;
-	--guise-skeleton-thumbnail-min-width: 100px;
-	--guise-skeleton-thumbnail-min-height: 100px;
-	--guise-skeleton-thumbnail-max-width: 200px;
-	--guise-skeleton-thumbnail-max-height: 200px;
+	--skelt-thumbnail-width: 20vw;
+	--skelt-thumbnail-height: 20vw;
+	--skelt-thumbnail-min-width: 100px;
+	--skelt-thumbnail-min-height: 100px;
+	--skelt-thumbnail-max-width: 200px;
+	--skelt-thumbnail-max-height: 200px;
 }
 
 /* thumbnail */
 
 .guise-skeleton img.thumbnail,
 img.skelt-thumbnail {
-	width: var(--guise-skeleton-thumbnail-width);
-	height: var(--guise-skeleton-thumbnail-height);
-	min-width: var(--guise-skeleton-thumbnail-min-width);
-	min-height: var(--guise-skeleton-thumbnail-min-height);
-	max-width: var(--guise-skeleton-thumbnail-max-width);
-	max-height: var(--guise-skeleton-thumbnail-max-height);
+	width: var(--skelt-thumbnail-width);
+	height: var(--skelt-thumbnail-height);
+	min-width: var(--skelt-thumbnail-min-width);
+	min-height: var(--skelt-thumbnail-min-height);
+	max-width: var(--skelt-thumbnail-max-width);
+	max-height: var(--skelt-thumbnail-max-height);
 	object-fit: scale-down;
 	object-position: center;
 }

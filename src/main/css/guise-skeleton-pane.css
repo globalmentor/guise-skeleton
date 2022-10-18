@@ -17,9 +17,9 @@
  */
 
  :root {
-	--guise-skeleton-pane-height: 18vw;
-	--guise-skeleton-pane-min-height: 8rem;
-	--guise-skeleton-pane-max-height: 16rem;
+	--skelt-pane-height: 18vw;
+	--skelt-pane-min-height: 8rem;
+	--skelt-pane-max-height: 16rem;
 }
 
 /* image pane */
@@ -27,7 +27,7 @@
 .guise-skeleton img.pane,
 img.skelt-pane {
 	width: auto;
-	height: var(--guise-skeleton-pane-height);
-	min-height: var(--guise-skeleton-pane-min-height);
-	max-height: var(--guise-skeleton-pane-max-height);
+	height: var(--skelt-pane-height);
+	min-height: var(--skelt-pane-min-height);
+	max-height: var(--skelt-pane-max-height);
 }

@@ -19,38 +19,38 @@
 /* see https://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css/ */
 
 :root {
-	--guise-skeleton-menu-active-background-color: var(--guise-skeleton-component-active-background-color);
-	--guise-skeleton-menu-active-color: #555555;
-	--guise-skeleton-menu-background-color: transparent;
-	--guise-skeleton-menu-border-color: inherit;
-	--guise-skeleton-menu-color: inherit;
-	--guise-skeleton-menu-font-family: var(--guise-skeleton-heading-font-family);
-	--guise-skeleton-menu-line-height: 3.5;
-	--guise-skeleton-menu-z-index: 99999;
-	--guise-skeleton-menu-highlight-background-color: var(--guise-skeleton-component-highlight-background-color);
-	--guise-skeleton-menu-highlight-color: black;
+	--skelt-menu-active-background-color: var(--skelt-component-active-background-color);
+	--skelt-menu-active-color: #555555;
+	--skelt-menu-background-color: transparent;
+	--skelt-menu-border-color: inherit;
+	--skelt-menu-color: inherit;
+	--skelt-menu-font-family: var(--skelt-heading-font-family);
+	--skelt-menu-line-height: 3.5;
+	--skelt-menu-z-index: 99999;
+	--skelt-menu-highlight-background-color: var(--skelt-component-highlight-background-color);
+	--skelt-menu-highlight-color: black;
 
-	--guise-skeleton-menu-sub-background-color: white;
-	--guise-skeleton-menu-sub-color: #777777;
-	--guise-skeleton-menu-sub-highlight-background-color: var(--guise-skeleton-menu-highlight-background-color);
-	--guise-skeleton-menu-sub-highlight-color: var(--guise-skeleton-menu-highlight-color);
-	--guise-skeleton-menu-sub-line-height: 3;
+	--skelt-menu-sub-background-color: white;
+	--skelt-menu-sub-color: #777777;
+	--skelt-menu-sub-highlight-background-color: var(--skelt-menu-highlight-background-color);
+	--skelt-menu-sub-highlight-color: var(--skelt-menu-highlight-color);
+	--skelt-menu-sub-line-height: 3;
 
-	--guise-skeleton-navbar-background-color: var(--guise-skeleton-component-background-color);
-	--guise-skeleton-navbar-border-color: var(--guise-skeleton-component-border-color);
-	--guise-skeleton-navbar-color: #777777;
-	--guise-skeleton-navbar-highlight-background-color: var(--guise-skeleton-menu-highlight-background-color);
-	--guise-skeleton-navbar-highlight-color: var(--guise-skeleton-menu-highlight-color);
-	--guise-skeleton-navbar-font-family: var(--guise-skeleton-menu-font-family);
-	--guise-skeleton-navbar-line-height: var(--guise-skeleton-menu-line-height);
+	--skelt-navbar-background-color: var(--skelt-component-background-color);
+	--skelt-navbar-border-color: var(--skelt-component-border-color);
+	--skelt-navbar-color: #777777;
+	--skelt-navbar-highlight-background-color: var(--skelt-menu-highlight-background-color);
+	--skelt-navbar-highlight-color: var(--skelt-menu-highlight-color);
+	--skelt-navbar-font-family: var(--skelt-menu-font-family);
+	--skelt-navbar-line-height: var(--skelt-menu-line-height);
 }
 
 /* # menu */
 
 .guise-skeleton ul.menu,
 ul.skelt-menu {
-	background-color: var(--guise-skeleton-menu-background-color);
-	color: var(--guise-skeleton-menu-color);
+	background-color: var(--skelt-menu-background-color);
+	color: var(--skelt-menu-color);
 	position: relative;
 }
 
@@ -60,13 +60,13 @@ ul.skelt-menu, ul.skelt-menu ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	z-index: var(--guise-skeleton-menu-z-index);
+	z-index: var(--skelt-menu-z-index);
 }
 
 /* disable any global label and link-specific styling */
 .guise-skeleton ul.menu li a, .guise-skeleton ul.menu li label,
 ul.skelt-menu li a, ul.skelt-menu li label {
-	background-color: var(--guise-skeleton-menu-background-color);
+	background-color: var(--skelt-menu-background-color);
 	color: inherit;
 	font-family: inherit;
 	line-height: inherit;
@@ -77,8 +77,8 @@ ul.skelt-menu li a, ul.skelt-menu li label {
 .guise-skeleton ul.menu li,
 ul.skelt-menu li {
 	display: inline-block;
-	font-family: var(--guise-skeleton-menu-font-family);
-	line-height: var(--guise-skeleton-menu-line-height);
+	font-family: var(--skelt-menu-font-family);
+	line-height: var(--skelt-menu-line-height);
 	text-align: center;
 }
 
@@ -91,25 +91,25 @@ ul.skelt-menu li a, ul.skelt-menu li label {
 
 .guise-skeleton ul.menu li.active,
 ul.skelt-menu li.skelt-active {
-	background-color: var(--guise-skeleton-menu-active-background-color);
-	color: var(--guise-skeleton-menu-active-color);
+	background-color: var(--skelt-menu-active-background-color);
+	color: var(--skelt-menu-active-color);
 }
 
 .guise-skeleton ul.menu li:hover,
 ul.skelt-menu li:hover {
-	background-color: var(--guise-skeleton-menu-highlight-background-color);
-	color: var(--guise-skeleton-menu-highlight-color);
+	background-color: var(--skelt-menu-highlight-background-color);
+	color: var(--skelt-menu-highlight-color);
 }
 
 /* ## submenu */
 
 .guise-skeleton ul.menu ul,
 ul.skelt-menu ul {
-	background-color: var(--guise-skeleton-menu-sub-background-color);
+	background-color: var(--skelt-menu-sub-background-color);
 	border-style: solid;
 	border-width: 1px;
-	border-color: var(--guise-skeleton-menu-border-color);
-	color: var(--guise-skeleton-menu-sub-color);
+	border-color: var(--skelt-menu-border-color);
+	color: var(--skelt-menu-sub-color);
 	display: none;
 	position: absolute;
 }
@@ -117,14 +117,14 @@ ul.skelt-menu ul {
 .guise-skeleton ul.menu ul li,
 ul.skelt-menu ul li {
 	display: block;
-	line-height: var(--guise-skeleton-menu-sub-line-height);
+	line-height: var(--skelt-menu-sub-line-height);
 	text-align: left;
 }
 
 .guise-skeleton ul.menu li:hover ul li:hover,
 ul.skelt-menu li:hover ul li:hover {
-	background-color: var(--guise-skeleton-menu-sub-highlight-background-color);
-	color: var(--guise-skeleton-menu-sub-highlight-color);
+	background-color: var(--skelt-menu-sub-highlight-background-color);
+	color: var(--skelt-menu-sub-highlight-color);
 }
 
 .guise-skeleton ul.menu li a:not(:last-child)::after,
@@ -141,19 +141,19 @@ ul.skelt-menu li a:hover+ul, ul.skelt-menu li ul:hover {
 
 .guise-skeleton nav.bar,
 nav.skelt-bar {
-	color: var(--guise-skeleton-navbar-color);
-	background-color: var(--guise-skeleton-navbar-background-color);
+	color: var(--skelt-navbar-color);
+	background-color: var(--skelt-navbar-background-color);
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
-	border-color: var(--guise-skeleton-navbar-border-color);
-	line-height: var(--guise-skeleton-navbar-line-height);
-	font-family: var(--guise-skeleton-navbar-font-family);
+	border-color: var(--skelt-navbar-border-color);
+	line-height: var(--skelt-navbar-line-height);
+	font-family: var(--skelt-navbar-font-family);
 }
 
 /* disable any global label and link-specific styling */
 .guise-skeleton nav.bar a, .guise-skeleton nav.bar label,
 nav.skelt-bar a, nav.skelt-bar label {
-	background-color: var(--guise-skeleton-navbar-background-color);
+	background-color: var(--skelt-navbar-background-color);
 	color: inherit;
 	font-family: inherit;
 	line-height: inherit;
@@ -169,8 +169,8 @@ nav.skelt-bar a, nav.skelt-bar label {
 
 .guise-skeleton nav.bar a:hover, .guise-skeleton nav.bar label.toggle:hover,
 nav.skelt-bar a:hover, nav.skelt-bar label.skelt-toggle:hover {
-	background-color: var(--guise-skeleton-navbar-highlight-background-color);
-	color: var(--guise-skeleton-navbar-highlight-color);
+	background-color: var(--skelt-navbar-highlight-background-color);
+	color: var(--skelt-navbar-highlight-color);
 }
 
 .guise-skeleton nav.bar label.toggle,

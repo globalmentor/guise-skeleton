@@ -17,10 +17,10 @@
  */
 
 :root {
-	--guise-skeleton-page-min-height: 100vh;
+	--skelt-page-min-height: 100vh;
 }
 
 .guise-skeleton .page,
 .skelt-page {
-	min-height: var(--guise-skeleton-page-min-height);
+	min-height: var(--skelt-page-min-height);
 }

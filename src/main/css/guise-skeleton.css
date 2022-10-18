@@ -1,7 +1,7 @@
 /*
  * Guise™ Skeleton x.x.x-SNAPSHOT (https://guise.io/skeleton/)
  *
- * Copyright © 2018 GlobalMentor, Inc. (https://www.globalmentor.com/)
+ * Copyright © 2018–2022 GlobalMentor, Inc. (https://www.globalmentor.com/)
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,6 +22,7 @@
 
 @import url("guise-skeleton-layout.css");
 
+@import url("guise-skeleton-avatar.css");
 @import url("guise-skeleton-button.css");
 @import url("guise-skeleton-card.css");
 @import url("guise-skeleton-hero.css");

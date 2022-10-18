@@ -1,0 +1,34 @@
+/*
+ * Guise™ Skeleton Thumbnail x.x.x-SNAPSHOT (https://guise.io/skeleton/)
+ *
+ * Copyright © 2022 GlobalMentor, Inc. (https://www.globalmentor.com/)
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+ :root {
+	--guise-skeleton-avatar-width: 9rem;
+	--guise-skeleton-avatar-height: 9rem;
+	--guise-skeleton-avatar-clip-path: circle();
+}
+
+/* thumbnail */
+
+.guise-skeleton img.avatar,
+img.skelt-avatar {
+	clip-path: var(--guise-skeleton-avatar-clip-path);
+	width: var(--guise-skeleton-avatar-width);
+	height: var(--guise-skeleton-avatar-height);
+	object-fit: scale-down;
+	object-position: center;
+}

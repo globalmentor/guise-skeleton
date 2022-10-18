@@ -21,24 +21,24 @@
 :root {
 	--guise-skeleton-menu-active-background-color: var(--guise-skeleton-component-active-background-color);
 	--guise-skeleton-menu-active-color: #555555;
-	--guise-skeleton-menu-background-color: var(--guise-skeleton-component-background-color);
-	--guise-skeleton-menu-border-color: var(--guise-skeleton-component-border-color);
-	--guise-skeleton-menu-color: #777777;
+	--guise-skeleton-menu-background-color: transparent;
+	--guise-skeleton-menu-border-color: inherit;
+	--guise-skeleton-menu-color: inherit;
 	--guise-skeleton-menu-font-family: var(--guise-skeleton-heading-font-family);
 	--guise-skeleton-menu-line-height: 3.5;
 	--guise-skeleton-menu-z-index: 99999;
 	--guise-skeleton-menu-highlight-background-color: var(--guise-skeleton-component-highlight-background-color);
 	--guise-skeleton-menu-highlight-color: black;
 
-	--guise-skeleton-menu-sub-background-color: var(--guise-skeleton-menu-background-color);
-	--guise-skeleton-menu-sub-color: var(--guise-skeleton-menu-color);
+	--guise-skeleton-menu-sub-background-color: white;
+	--guise-skeleton-menu-sub-color: #777777;
 	--guise-skeleton-menu-sub-highlight-background-color: var(--guise-skeleton-menu-highlight-background-color);
 	--guise-skeleton-menu-sub-highlight-color: var(--guise-skeleton-menu-highlight-color);
 	--guise-skeleton-menu-sub-line-height: 3;
 
-	--guise-skeleton-navbar-background-color: var(--guise-skeleton-menu-background-color);
-	--guise-skeleton-navbar-border-color: var(--guise-skeleton-menu-border-color);
-	--guise-skeleton-navbar-color: var(--guise-skeleton-menu-color);
+	--guise-skeleton-navbar-background-color: var(--guise-skeleton-component-background-color);
+	--guise-skeleton-navbar-border-color: var(--guise-skeleton-component-border-color);
+	--guise-skeleton-navbar-color: #777777;
 	--guise-skeleton-navbar-highlight-background-color: var(--guise-skeleton-menu-highlight-background-color);
 	--guise-skeleton-navbar-highlight-color: var(--guise-skeleton-menu-highlight-color);
 	--guise-skeleton-navbar-font-family: var(--guise-skeleton-menu-font-family);

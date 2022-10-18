@@ -17,36 +17,36 @@
  */
 
 :root {
-	--guise-skeleton-rotulus-padding-left: 0;
-	--guise-skeleton-rotulus-padding-right: 0;
-	--guise-skeleton-rotulus-section-padding-top: 4em;
-	--guise-skeleton-rotulus-section-padding-right: 2em;
-	--guise-skeleton-rotulus-section-padding-bottom: 4em;
-	--guise-skeleton-rotulus-section-padding-left: 2em;
-	--guise-skeleton-rotulus-stripe-background-color: var(--guise-skeleton-component-background-color);
-	--guise-skeleton-rotulus-stripe-background-color-default: initial;
+	--skelt-rotulus-padding-left: 0;
+	--skelt-rotulus-padding-right: 0;
+	--skelt-rotulus-section-padding-top: 4em;
+	--skelt-rotulus-section-padding-right: 2em;
+	--skelt-rotulus-section-padding-bottom: 4em;
+	--skelt-rotulus-section-padding-left: 2em;
+	--skelt-rotulus-stripe-background-color: var(--skelt-component-background-color);
+	--skelt-rotulus-stripe-background-color-default: initial;
 }
 
 .guise-skeleton .rotulus,
 .skelt-rotulus {
-	padding-left: var(--guise-skeleton-rotulus-padding-left);
-	padding-right: var(--guise-skeleton-rotulus-padding-right);
+	padding-left: var(--skelt-rotulus-padding-left);
+	padding-right: var(--skelt-rotulus-padding-right);
 }
 
 .guise-skeleton .rotulus>section,
 .skelt-rotulus>section {
-	padding-top: var(--guise-skeleton-rotulus-section-padding-top);
-	padding-right: var(--guise-skeleton-rotulus-section-padding-right);
-	padding-bottom: var(--guise-skeleton-rotulus-section-padding-bottom);
-	padding-left: var(--guise-skeleton-rotulus-section-padding-left);
+	padding-top: var(--skelt-rotulus-section-padding-top);
+	padding-right: var(--skelt-rotulus-section-padding-right);
+	padding-bottom: var(--skelt-rotulus-section-padding-bottom);
+	padding-left: var(--skelt-rotulus-section-padding-left);
 }
 
 .guise-skeleton .rotulus>section:nth-child(even),
 .skelt-rotulus>section:nth-child(even) {
-	background-color: var(--guise-skeleton-rotulus-stripe-background-color-default);
+	background-color: var(--skelt-rotulus-stripe-background-color-default);
 }
 
 .guise-skeleton .rotulus.is-striped>section:nth-child(even),
 .skelt-rotulus.skelt-is-striped>section:nth-child(even) {
-	background-color: var(--guise-skeleton-rotulus-stripe-background-color);
+	background-color: var(--skelt-rotulus-stripe-background-color);
 }

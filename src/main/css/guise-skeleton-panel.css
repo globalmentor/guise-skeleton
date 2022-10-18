@@ -17,16 +17,16 @@
  */
 
 :root {
-	--guise-skeleton-panel-padding-top: 1em;
-	--guise-skeleton-panel-padding-right: 1em;
-	--guise-skeleton-panel-padding-bottom: 1em;
-	--guise-skeleton-panel-padding-left: 1em;
+	--skelt-panel-padding-top: 1em;
+	--skelt-panel-padding-right: 1em;
+	--skelt-panel-padding-bottom: 1em;
+	--skelt-panel-padding-left: 1em;
 }
 
 .guise-skeleton .panel,
 .skelt-panel {
-	padding-top: var(--guise-skeleton-panel-padding-top);
-	padding-right: var(--guise-skeleton-panel-padding-right);
-	padding-bottom: var(--guise-skeleton-panel-padding-bottom);
-	padding-left: var(--guise-skeleton-panel-padding-left);
+	padding-top: var(--skelt-panel-padding-top);
+	padding-right: var(--skelt-panel-padding-right);
+	padding-bottom: var(--skelt-panel-padding-bottom);
+	padding-left: var(--skelt-panel-padding-left);
 }

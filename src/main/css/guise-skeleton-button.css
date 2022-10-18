@@ -19,7 +19,7 @@
 /* see https://github.com/pure-css/pure/tree/master/src/buttons */
 
 :root {
-	--guise-skeleton-button-font-family: var(--guise-skeleton-menu-font-family, var(--guise-skeleton-heading-font-family));
+	--skelt-button-font-family: var(--skelt-menu-font-family, var(--skelt-heading-font-family));
 }
 
 .guise-skeleton button, .guise-skeleton a.button,
@@ -30,8 +30,8 @@ button.skelt-button, a.skelt-button {
 	border-radius: 2px;
 	padding: 0.5em 1em;
 	color: rgba(0, 0, 0, 0.80);
-	background-color: var(--guise-skeleton-component-accent-color);
-	font-family: var(--guise-skeleton-button-font-family);
+	background-color: var(--skelt-component-accent-color);
+	font-family: var(--skelt-button-font-family);
 	line-height: normal;
 	text-align: center;
 	text-decoration: none;

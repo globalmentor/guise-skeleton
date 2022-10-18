@@ -110,32 +110,32 @@ section.skelt-layout-flex.skelt-along-block>header, section.skelt-layout-flex.sk
 
 .guise-skeleton .lid>.flap.side-block-start.size-marginal,
 .skelt-lid>.skelt-flap.skelt-side-block-start.skelt-size-marginal {
-	bottom: calc(100% - var(--guise-skeleton-size-marginal));
+	bottom: calc(100% - var(--skelt-size-marginal));
 }
 
 .guise-skeleton .lid>.flap.side-block-start.size-subordinate,
 .skelt-lid>.skelt-flap.skelt-side-block-start.skelt-size-subordinate {
-	bottom: calc(100% - var(--guise-skeleton-size-subordinate));
+	bottom: calc(100% - var(--skelt-size-subordinate));
 }
 
 .guise-skeleton .lid>.flap.side-block-start.size-significant,
 .skelt-lid>.skelt-flap.skelt-side-block-start.skelt-size-significant {
-	bottom: calc(100% - var(--guise-skeleton-size-significant));
+	bottom: calc(100% - var(--skelt-size-significant));
 }
 
 .guise-skeleton .lid>.flap.side-block-start.size-partial,
 .skelt-lid>.skelt-flap.skelt-side-block-start.skelt-size-partial {
-	bottom: calc(100% - var(--guise-skeleton-size-partial));
+	bottom: calc(100% - var(--skelt-size-partial));
 }
 
 .guise-skeleton .lid>.flap.side-block-start.size-substantial,
 .skelt-lid>.skelt-flap.skelt-side-block-start.skelt-size-substantial {
-	bottom: calc(100% - var(--guise-skeleton-size-substantial));
+	bottom: calc(100% - var(--skelt-size-substantial));
 }
 
 .guise-skeleton .lid>.flap.side-block-start.size-full,
 .skelt-lid>.skelt-flap.skelt-side-block-start.skelt-size-full {
-	bottom: calc(100% - var(--guise-skeleton-size-full));
+	bottom: calc(100% - var(--skelt-size-full));
 }
 
 /* ## flap side-block-end */
@@ -148,32 +148,32 @@ section.skelt-layout-flex.skelt-along-block>header, section.skelt-layout-flex.sk
 
 .guise-skeleton .lid>.flap.side-block-end.size-marginal,
 .skelt-lid>.skelt-flap.skelt-side-block-end.skelt-size-marginal {
-	top: calc(100% - var(--guise-skeleton-size-marginal));
+	top: calc(100% - var(--skelt-size-marginal));
 }
 
 .guise-skeleton .lid>.flap.side-block-end.size-subordinate,
 .skelt-lid>.skelt-flap.skelt-side-block-end.skelt-size-subordinate {
-	top: calc(100% - var(--guise-skeleton-size-subordinate));
+	top: calc(100% - var(--skelt-size-subordinate));
 }
 
 .guise-skeleton .lid>.flap.side-block-end.size-significant,
 .skelt-lid>.skelt-flap.skelt-side-block-end.skelt-size-significant {
-	top: calc(100% - var(--guise-skeleton-size-significant));
+	top: calc(100% - var(--skelt-size-significant));
 }
 
 .guise-skeleton .lid>.flap.side-block-end.size-partial,
 .skelt-lid>.skelt-flap.skelt-side-block-end.skelt-size-partial {
-	top: calc(100% - var(--guise-skeleton-size-partial));
+	top: calc(100% - var(--skelt-size-partial));
 }
 
 .guise-skeleton .lid>.flap.side-block-end.size-substantial,
 .skelt-lid>.skelt-flap.skelt-side-block-end.skelt-size-substantial {
-	top: calc(100% - var(--guise-skeleton-size-substantial));
+	top: calc(100% - var(--skelt-size-substantial));
 }
 
 .guise-skeleton .lid>.flap.side-block-end.size-full,
 .skelt-lid>.skelt-flap.skelt-side-block-end.skelt-size-full {
-	top: calc(100% - var(--guise-skeleton-size-full));
+	top: calc(100% - var(--skelt-size-full));
 }
 
 /* ## flap side-inline-start */
@@ -186,32 +186,32 @@ section.skelt-layout-flex.skelt-along-block>header, section.skelt-layout-flex.sk
 
 .guise-skeleton .lid>.flap.side-inline-start.size-marginal,
 .skelt-lid>.skelt-flap.skelt-side-inline-start.skelt-size-marginal {
-	right: calc(100% - var(--guise-skeleton-size-marginal));
+	right: calc(100% - var(--skelt-size-marginal));
 }
 
 .guise-skeleton .lid>.flap.side-inline-start.size-subordinate,
 .skelt-lid>.skelt-flap.skelt-side-inline-start.skelt-size-subordinate {
-	right: calc(100% - var(--guise-skeleton-size-subordinate));
+	right: calc(100% - var(--skelt-size-subordinate));
 }
 
 .guise-skeleton .lid>.flap.side-inline-start.size-significant,
 .skelt-lid>.skelt-flap.skelt-side-inline-start.skelt-size-significant {
-	right: calc(100% - var(--guise-skeleton-size-significant));
+	right: calc(100% - var(--skelt-size-significant));
 }
 
 .guise-skeleton .lid>.flap.side-inline-start.size-partial,
 .skelt-lid>.skelt-flap.skelt-side-inline-start.skelt-size-partial {
-	right: calc(100% - var(--guise-skeleton-size-partial));
+	right: calc(100% - var(--skelt-size-partial));
 }
 
 .guise-skeleton .lid>.flap.side-inline-start.size-substantial,
 .skelt-lid>.skelt-flap.skelt-side-inline-start.skelt-size-substantial {
-	right: calc(100% - var(--guise-skeleton-size-substantial));
+	right: calc(100% - var(--skelt-size-substantial));
 }
 
 .guise-skeleton .lid>.flap.side-inline-start.size-full,
 .skelt-lid>.skelt-flap.skelt-side-inline-start.skelt-size-full {
-	right: calc(100% - var(--guise-skeleton-size-full));
+	right: calc(100% - var(--skelt-size-full));
 }
 
 /* ## flap side-inline-end */
@@ -224,32 +224,32 @@ section.skelt-layout-flex.skelt-along-block>header, section.skelt-layout-flex.sk
 
 .guise-skeleton .lid>.flap.side-inline-end.size-marginal,
 .skelt-lid>.skelt-flap.skelt-side-inline-end.skelt-size-marginal {
-	left: calc(100% - var(--guise-skeleton-size-marginal));
+	left: calc(100% - var(--skelt-size-marginal));
 }
 
 .guise-skeleton .lid>.flap.side-inline-end.size-subordinate,
 .skelt-lid>.skelt-flap.skelt-side-inline-end.skelt-size-subordinate {
-	left: calc(100% - var(--guise-skeleton-size-subordinate));
+	left: calc(100% - var(--skelt-size-subordinate));
 }
 
 .guise-skeleton .lid>.flap.side-inline-end.size-significant,
 .skelt-lid>.skelt-flap.skelt-side-inline-end.skelt-size-significant {
-	left: calc(100% - var(--guise-skeleton-size-significant));
+	left: calc(100% - var(--skelt-size-significant));
 }
 
 .guise-skeleton .lid>.flap.side-inline-end.size-partial,
 .skelt-lid>.skelt-flap.skelt-side-inline-end.skelt-size-partial {
-	left: calc(100% - var(--guise-skeleton-size-partial));
+	left: calc(100% - var(--skelt-size-partial));
 }
 
 .guise-skeleton .lid>.flap.side-inline-end.size-substantial,
 .skelt-lid>.skelt-flap.skelt-side-inline-end.skelt-size-substantial {
-	left: calc(100% - var(--guise-skeleton-size-substantial));
+	left: calc(100% - var(--skelt-size-substantial));
 }
 
 .guise-skeleton .lid>.flap.side-inline-end.size-full,
 .skelt-lid>.skelt-flap.skelt-side-inline-end.skelt-size-full {
-	left: calc(100% - var(--guise-skeleton-size-full));
+	left: calc(100% - var(--skelt-size-full));
 }
 
 /* # float */
@@ -266,60 +266,60 @@ section.skelt-layout-flex.skelt-along-block>header, section.skelt-layout-flex.sk
 
 .guise-skeleton .float-start.size-marginal, .guise-skeleton .float-end.size-marginal,
 .skelt-float-start.skelt-size-marginal, .skelt-float-end.skelt-size-marginal {
-	width: var(--guise-skeleton-size-marginal);
+	width: var(--skelt-size-marginal);
 }
 
 .guise-skeleton .float-start.size-subordinate, .guise-skeleton .float-end.size-subordinate,
 .skelt-float-start.skelt-size-subordinate, .skelt-float-end.skelt-size-subordinate {
-	width: var(--guise-skeleton-size-subordinate);
+	width: var(--skelt-size-subordinate);
 }
 
 .guise-skeleton .float-start.size-significant, .guise-skeleton .float-end.size-significant,
 .skelt-float-start.skelt-size-significant, .skelt-float-end.skelt-size-significant {
-	width: var(--guise-skeleton-size-significant);
+	width: var(--skelt-size-significant);
 }
 
 .guise-skeleton .float-start.size-partial, .guise-skeleton .float-end.size-partial,
 .skelt-float-start.skelt-size-partial, .skelt-float-end.skelt-size-partial {
-	width: var(--guise-skeleton-size-partial);
+	width: var(--skelt-size-partial);
 }
 
 .guise-skeleton .float-start.size-substantial, .guise-skeleton .float-end.size-substantial,
 .skelt-float-start.skelt-size-substantial, .skelt-float-end.skelt-size-substantial {
-	width: var(--guise-skeleton-size-substantial);
+	width: var(--skelt-size-substantial);
 }
 
 .guise-skeleton .float-start.size-full, .guise-skeleton .float-end.size-full,
 .skelt-float-start.skelt-size-full, .skelt-float-end.skelt-size-full {
-	width: var(--guise-skeleton-size-full);
+	width: var(--skelt-size-full);
 }
 
 .guise-skeleton .float-start.max-size-marginal, .guise-skeleton .float-end.max-size-marginal,
 .skelt-float-start.skelt-max-size-marginal, .skelt-float-end.skelt-max-size-marginal {
-	max-width: var(--guise-skeleton-size-marginal);
+	max-width: var(--skelt-size-marginal);
 }
 
 .guise-skeleton .float-start.max-size-subordinate, .guise-skeleton .float-end.max-size-subordinate,
 .skelt-float-start.skelt-max-size-subordinate, .skelt-float-end.skelt-max-size-subordinate {
-	max-width: var(--guise-skeleton-size-subordinate);
+	max-width: var(--skelt-size-subordinate);
 }
 
 .guise-skeleton .float-start.max-size-significant, .guise-skeleton .float-end.max-size-significant,
 .skelt-float-start.skelt-max-size-significant, .skelt-float-end.skelt-max-size-significant {
-	max-width: var(--guise-skeleton-size-significant);
+	max-width: var(--skelt-size-significant);
 }
 
 .guise-skeleton .float-start.max-size-partial, .guise-skeleton .float-end.max-size-partial,
 .skelt-float-start.skelt-max-size-partial, .skelt-float-end.skelt-max-size-partial {
-	max-width: var(--guise-skeleton-size-partial);
+	max-width: var(--skelt-size-partial);
 }
 
 .guise-skeleton .float-start.max-size-substantial, .guise-skeleton .float-end.max-size-substantial,
 .skelt-float-start.skelt-max-size-substantial, .skelt-float-end.skelt-max-size-substantial {
-	max-width: var(--guise-skeleton-size-substantial);
+	max-width: var(--skelt-size-substantial);
 }
 
 .guise-skeleton .float-start.max-size-full, .guise-skeleton .float-end.max-size-full,
 .skelt-float-start.skelt-max-size-full, .skelt-float-end.skelt-max-size-full {
-	max-width: var(--guise-skeleton-size-full);
+	max-width: var(--skelt-size-full);
 }

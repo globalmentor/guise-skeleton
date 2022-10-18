@@ -17,18 +17,18 @@
  */
 
 :root {
-	--guise-skeleton-card-background-color: white;
-	--guise-skeleton-card-border-color: var(--guise-skeleton-component-border-color);
-	--guise-skeleton-card-border-style: solid;
-	--guise-skeleton-card-border-width: 1px;
+	--skelt-card-background-color: white;
+	--skelt-card-border-color: var(--skelt-component-border-color);
+	--skelt-card-border-style: solid;
+	--skelt-card-border-width: 1px;
 }
 
 .guise-skeleton .card,
 .skelt-card {
-	background-color: var(--guise-skeleton-card-background-color);
-	border-style: var(--guise-skeleton-card-border-style);
-	border-width: var(--guise-skeleton-card-border-width);
-	border-color: var(--guise-skeleton-card-border-color);
+	background-color: var(--skelt-card-background-color);
+	border-style: var(--skelt-card-border-style);
+	border-width: var(--skelt-card-border-width);
+	border-color: var(--skelt-card-border-color);
 	display: inline-block;
 	flex-basis: auto;
 	flex-grow: 0;

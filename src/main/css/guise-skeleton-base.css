@@ -1,7 +1,7 @@
 /*
  * Guise™ Skeleton Base x.x.x-SNAPSHOT (https://guise.io/skeleton/)
  *
- * Copyright © 2018–2019 GlobalMentor, Inc. (https://www.globalmentor.com/)
+ * Copyright © 2018–2022 GlobalMentor, Inc. (https://www.globalmentor.com/)
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -50,23 +50,30 @@
 	--guise-skeleton-size-full: calc(100% * var(--guise-skeleton-size-full-factor));
 }
 
-/* Bootstrap Reboot tweaks */
+/* # Bootstrap Reboot tweaks */
+
+/* Reboot 5.2.2 only sets `<blockquote>` `margin: 0 0 1rem;`. */
+blockquote {
+	margin-left: 2rem;
+}
+
+/* Reboot 5.2.2 changes the color of `<code>` to a pinkish red. */
+code {
+	color: inherit;
+}
+
+/* Reboot 5.2.2 only sets `<figure>` `margin: 0 0 1rem;`. */
+figure {
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+}
+
+/* # Guise Skeleton base styles */
 
 aside {
 	margin-top: 0;
 	margin-right: 0.5rem;
 	margin-bottom: 1rem;
-	margin-left: 0.5rem;
-}
-
-blockquote {
-	/* Reboot v4.1.3 only sets `margin: 0 0 1rem;`. */
-	margin-left: 2rem;
-}
-
-figure {
-	/* Reboot v4.1.3 only sets `margin: 0 0 1rem;`. */
-	margin-right: 0.5rem;
 	margin-left: 0.5rem;
 }
 

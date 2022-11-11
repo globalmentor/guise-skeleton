@@ -25,10 +25,10 @@
 	--skelt-menu-border-color: inherit;
 	--skelt-menu-color: inherit;
 	--skelt-menu-font-family: var(--skelt-heading-font-family);
-	--skelt-menu-line-height: 3.5;
-	--skelt-menu-z-index: 99999;
 	--skelt-menu-highlight-background-color: var(--skelt-component-highlight-background-color);
 	--skelt-menu-highlight-color: black;
+	--skelt-menu-line-height: 3.5;
+	--skelt-menu-z-index: 99999;
 
 	--skelt-menu-sub-background-color: white;
 	--skelt-menu-sub-color: #777777;
@@ -51,6 +51,7 @@
 ul.skelt-menu {
 	background-color: var(--skelt-menu-background-color);
 	color: var(--skelt-menu-color);
+	display: flex;
 	position: relative;
 }
 

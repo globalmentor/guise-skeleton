@@ -22,15 +22,15 @@
 	--skelt-menu-active-background-color: var(--skelt-component-active-background-color);
 	--skelt-menu-active-color: #555555;
 	--skelt-menu-background-color: transparent;
-	--skelt-menu-border-color: inherit;
 	--skelt-menu-color: inherit;
 	--skelt-menu-font-family: var(--skelt-heading-font-family);
-	--skelt-menu-line-height: 3.5;
-	--skelt-menu-z-index: 99999;
 	--skelt-menu-highlight-background-color: var(--skelt-component-highlight-background-color);
 	--skelt-menu-highlight-color: black;
+	--skelt-menu-line-height: 3.5;
+	--skelt-menu-z-index: 99999;
 
 	--skelt-menu-sub-background-color: white;
+	--skelt-menu-sub-border-color: var(--skelt-component-border-color);
 	--skelt-menu-sub-color: #777777;
 	--skelt-menu-sub-highlight-background-color: var(--skelt-menu-highlight-background-color);
 	--skelt-menu-sub-highlight-color: var(--skelt-menu-highlight-color);
@@ -51,6 +51,7 @@
 ul.skelt-menu {
 	background-color: var(--skelt-menu-background-color);
 	color: var(--skelt-menu-color);
+	display: flex;
 	position: relative;
 }
 
@@ -108,7 +109,7 @@ ul.skelt-menu ul {
 	background-color: var(--skelt-menu-sub-background-color);
 	border-style: solid;
 	border-width: 1px;
-	border-color: var(--skelt-menu-border-color);
+	border-color: var(--skelt-menu-sub-border-color);
 	color: var(--skelt-menu-sub-color);
 	display: none;
 	position: absolute;

@@ -1,6 +1,6 @@
 {
 	"name": "@guise/skeleton",
-	"version": "0.1.0-SNAPSHOT",
+	"version": "0.1.0",
 	"description": "Guise™ Skeleton: The simple, semantic, bare-bones CSS to hold your site together.",
 	"author": "Garret Wilson <garret@globalmentor.com> (https://www.garretwilson.com/)",
 	"organization": "GlobalMentor, Inc. (https://www.globalmentor.com/)",

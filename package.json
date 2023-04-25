@@ -32,8 +32,8 @@
 		"preamble-cli": "^2.0.0",
 		"replace-in-file": "^6.3.5",
 		"rimraf": "^3.0.2",
-		"stylelint": "^14.13.0",
-		"stylelint-config-recommended": "^9.0.0"
+		"stylelint": "^15.6.0",
+		"stylelint-config-recommended": "^12.0.0"
 	},
 	"scripts": {
 		"test": "stylelint \"src/main/css/guise-skeleton-*.css\"",

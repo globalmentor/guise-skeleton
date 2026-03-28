@@ -2,7 +2,7 @@
 
 The simple, semantic, bare-bones CSS to hold your site together.
 
-[Guise Skeleton](https://guise.io/skeleton/) is part of the [Guise™ Internet application suite](https://guise.io/).
+[Guise Skeleton](https://guise.dev/skeleton/) is part of the [Guise™ Internet application suite](https://guise.dev/).
 
 ## Building Guise™ Skeleton
 
@@ -66,4 +66,4 @@ Alternatively you can mix-and-match only the Guise Skeleton components you want 
 * `guise-skeleton-layout.min.css` (recommended)
 * Individual Guise Skeleton components such as `guise-skeleton-button.min.css`.
 
-See the [Getting Started](https://guise.io/skeleton/docs/start) guide for more detailed instructions.
+See the [Getting Started](https://guise.dev/skeleton/docs/start) guide for more detailed instructions.

@@ -1,4 +1,4 @@
-# [SKELT-1]: Migrate from `guise.io` to `guise.dev` domain and update dependencies.
+# [SKELT-1] Migrate from `guise.io` to `guise.dev` domain and update dependencies.
 
 ## Objective
 

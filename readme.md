@@ -51,8 +51,8 @@ npm run clean && npm run build
 The build produces the following artifacts:
 
 * `dist/css/*.css`: Source CSS files for distribution.
-* `dist/css/*-min.css`: Minimized CSS files for distribution.
-* `dist/css/*-min.css.map`: Map files for debugging minimized CSS files.
+* `dist/css/*.min.css`: Minimized CSS files for distribution.
+* `dist/css/*.min.css.map`: Map files for debugging minimized CSS files.
 * `target/guise-skeleton-x-x-x.zip`: Archive of distributable files listed above.
 
 ### Clean
@@ -79,9 +79,87 @@ Performs a full build, including tests, minification, and packaging.
 npm run build
 ```
 
+### Publishing
+
+Inspect the file list that will be published:
+
+```
+npm pack --dry-run
+```
+
+To publish to npm:
+
+```
+npm publish
+```
+
+The `prepublishOnly` script automatically runs `clean`, `test`, and `build`, so `npm publish` cannot succeed without a fresh, tested build. It also refuses to publish if the version is still a `-SNAPSHOT` development version.
+
+During development the version is set to a `-SNAPSHOT` suffix (e.g. `0.2.0-SNAPSHOT`). Before publishing, the version must be set to a clean release version. Use `npm version` to change it without creating a Git tag:
+
+```
+npm version 0.2.0 --no-git-tag-version
+```
+
 ## Using Guise™ Skeleton
 
-The easiest way to use Guise Skeleton is to include _only_ the `dist/guise-skeleton.min.css` (which also can be found in target/guise-skeleton-x-x-x.zip) produced by the build process as a stylesheet on your web page. Enable Guise Skeleton across the page by specifying the `guise-skeleton` class on the document `<html>` element.
+### Bundler Import
+
+Install the package:
+
+```
+npm install @guise/skeleton
+```
+
+Then import the aggregate stylesheet (JS entry for bundlers that support CSS imports):
+
+```js
+import "@guise/skeleton";
+```
+
+Or from CSS:
+
+```css
+@import "@guise/skeleton";
+```
+
+Individual components are available as subpath imports:
+
+```css
+@import "@guise/skeleton/base";
+@import "@guise/skeleton/layout";
+@import "@guise/skeleton/button";
+```
+
+The minified aggregate bundle is available as `@guise/skeleton/min`.
+
+### Direct File Reference
+
+Install the package and reference the stylesheet directly from `node_modules/`:
+
+```html
+<link href="node_modules/@guise/skeleton/dist/css/guise-skeleton.min.css" rel="stylesheet" />
+```
+
+This is useful for projects that do not run a bundler over CSS.
+
+### CDN
+
+Use the package directly from a CDN without installing anything:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@guise/skeleton@x.y.z/dist/css/guise-skeleton.min.css" />
+```
+
+Or via unpkg:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@guise/skeleton@x.y.z/dist/css/guise-skeleton.min.css" />
+```
+
+### Activation
+
+Enable Guise Skeleton across the page by specifying the `guise-skeleton` class on the document `<html>` element.
 
 ```html
 <!DOCTYPE html>

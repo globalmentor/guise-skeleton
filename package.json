@@ -1,49 +1,74 @@
 {
-	"name": "@guise/skeleton",
-	"version": "0.2.0-SNAPSHOT",
-	"description": "Guise™ Skeleton: The simple, semantic, bare-bones CSS to hold your site together.",
-	"author": "Garret Wilson <garret@globalmentor.com> (https://www.garretwilson.com/)",
-	"organization": "GlobalMentor, Inc. (https://www.globalmentor.com/)",
-	"license": "Apache-2.0",
-	"homepage": "https://guise.dev/skeleton/",
-	"keywords": [
-		"Guise",
-		"Skeleton",
-		"CSS",
-		"library"
-	],
-	"publishConfig": {
-		"access": "public"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/globalmentor/guise-skeleton.git"
-	},
-	"bugs": {
-		"url": "https://github.com/globalmentor/guise-skeleton/issues"
-	},
-	"devDependencies": {
-		"clean-css-cli": "^5.6.3",
-		"copyfiles": "^2.1.0",
-		"cross-zip": "^2.1.6",
-		"foreach-cli": "^1.8.1",
-		"mkdirp": "^3.0.1",
-		"preamble-cli": "^2.0.0",
-		"replace-in-file": "^8.4.0",
-		"rimraf": "^6.1.3",
-		"stylelint": "^17.6.0",
-		"stylelint-config-recommended": "^18.0.0"
-	},
-	"scripts": {
-		"test": "stylelint \"src/main/css/guise-skeleton-*.css\"",
-		"clean": "rimraf --glob \"dist/*\" && rimraf target",
-		"prebuild": "mkdirp dist && mkdirp target",
-		"build": "npm run build:copy-sources && npm run build:minify && npm run build:add-min-preambles && npm run build:add-source-charset && npm run build:insert-version && npm run package",
-		"build:copy-sources": "copyfiles --up 2 --verbose \"src/main/css/*.css\" dist",
-		"build:minify": "foreach --glob \"src/main/css/*.css\" -x \"cleancss #{path} -o dist/css/#{name}.min.css --source-map\"",
-		"build:add-min-preambles": "foreach --glob \"dist/css/guise-skeleton*.min.css\" -x \"preamble -o #{path} -p \\\" * Guise™ Skeleton x.x.x-SNAPSHOT #{base}\\\" -e src/main/resources/min-preamble-footer.css\" && foreach --glob \"dist/css/guise-skeleton*.min.css\" -x \"preamble -o #{path} -e src/main/resources/min-preamble-header.css\"",
-		"build:add-source-charset": "foreach --glob \"dist/css/guise-skeleton*.css\" --ignore \"dist/css/guise-skeleton*.min.css\" -x \"preamble -o #{path} -e src/main/resources/charset.css\"",
-		"build:insert-version": "node scripts/build-versioned.mjs insert-version",
-		"package": "node scripts/build-versioned.mjs package"
-	}
+  "name": "@guise/skeleton",
+  "version": "0.2.0-SNAPSHOT",
+  "description": "Guise™ Skeleton: The simple, semantic, bare-bones CSS to hold your site together.",
+  "author": "Garret Wilson <garret@globalmentor.com> (https://www.garretwilson.com/)",
+  "organization": "GlobalMentor, Inc. (https://www.globalmentor.com/)",
+  "license": "Apache-2.0",
+  "homepage": "https://guise.dev/skeleton/",
+  "keywords": [
+    "Guise",
+    "Skeleton",
+    "CSS",
+    "library"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/globalmentor/guise-skeleton.git"
+  },
+  "bugs": {
+    "url": "https://github.com/globalmentor/guise-skeleton/issues"
+  },
+  "files": ["dist", "readme.md", "license.md"],
+  "main": "dist/css/guise-skeleton.css",
+  "style": "dist/css/guise-skeleton.css",
+  "sideEffects": ["**/*.css"],
+  "exports": {
+    ".": "./dist/css/guise-skeleton.css",
+    "./min": "./dist/css/guise-skeleton.min.css",
+    "./reboot": "./dist/css/bootstrap-reboot.css",
+    "./base": "./dist/css/guise-skeleton-base.css",
+    "./layout": "./dist/css/guise-skeleton-layout.css",
+    "./avatar": "./dist/css/guise-skeleton-avatar.css",
+    "./button": "./dist/css/guise-skeleton-button.css",
+    "./card": "./dist/css/guise-skeleton-card.css",
+    "./hero": "./dist/css/guise-skeleton-hero.css",
+    "./menu": "./dist/css/guise-skeleton-menu.css",
+    "./page": "./dist/css/guise-skeleton-page.css",
+    "./pane": "./dist/css/guise-skeleton-pane.css",
+    "./panel": "./dist/css/guise-skeleton-panel.css",
+    "./rotulus": "./dist/css/guise-skeleton-rotulus.css",
+    "./table": "./dist/css/guise-skeleton-table.css",
+    "./thumbnail": "./dist/css/guise-skeleton-thumbnail.css",
+    "./css/*": "./dist/css/*",
+    "./package.json": "./package.json"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "copyfiles": "^2.1.0",
+    "cross-zip": "^2.1.6",
+    "foreach-cli": "^1.8.1",
+    "mkdirp": "^3.0.1",
+    "preamble-cli": "^2.0.0",
+    "replace-in-file": "^8.4.0",
+    "rimraf": "^6.1.3",
+    "stylelint": "^17.6.0",
+    "stylelint-config-recommended": "^18.0.0"
+  },
+  "scripts": {
+    "test": "stylelint \"src/main/css/guise-skeleton-*.css\"",
+    "clean": "rimraf --glob \"dist/*\" && rimraf target",
+    "prebuild": "mkdirp dist && mkdirp target",
+    "build": "npm run build:copy-sources && npm run build:minify && npm run build:add-min-preambles && npm run build:add-source-charset && npm run build:insert-version && npm run package",
+    "build:copy-sources": "copyfiles --up 2 --verbose \"src/main/css/*.css\" dist",
+    "build:minify": "foreach --glob \"src/main/css/*.css\" -x \"cleancss #{path} -o dist/css/#{name}.min.css --source-map\"",
+    "build:add-min-preambles": "foreach --glob \"dist/css/guise-skeleton*.min.css\" -x \"preamble -o #{path} -p \\\" * Guise™ Skeleton x.x.x-SNAPSHOT #{base}\\\" -e src/main/resources/min-preamble-footer.css\" && foreach --glob \"dist/css/guise-skeleton*.min.css\" -x \"preamble -o #{path} -e src/main/resources/min-preamble-header.css\"",
+    "build:add-source-charset": "foreach --glob \"dist/css/guise-skeleton*.css\" --ignore \"dist/css/guise-skeleton*.min.css\" -x \"preamble -o #{path} -e src/main/resources/charset.css\"",
+    "build:insert-version": "node scripts/build-versioned.mjs insert-version",
+    "package": "node scripts/build-versioned.mjs package",
+    "prepublishOnly": "node -e \"if(/-SNAPSHOT(\\+|$)/i.test(require('./package.json').version))process.exit(1)\" && npm run clean && npm test && npm run build"
+  }
 }

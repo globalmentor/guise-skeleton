@@ -1,6 +1,6 @@
 {
   "name": "@guise/skeleton",
-  "version": "0.2.0-SNAPSHOT",
+  "version": "0.2.0",
   "description": "Guise™ Skeleton: The simple, semantic, bare-bones CSS to hold your site together.",
   "author": "Garret Wilson <garret@globalmentor.com> (https://www.garretwilson.com/)",
   "organization": "GlobalMentor, Inc. (https://www.globalmentor.com/)",
@@ -22,10 +22,16 @@
   "bugs": {
     "url": "https://github.com/globalmentor/guise-skeleton/issues"
   },
-  "files": ["dist", "readme.md", "license.md"],
+  "files": [
+    "dist",
+    "readme.md",
+    "license.md"
+  ],
   "main": "dist/css/guise-skeleton.css",
   "style": "dist/css/guise-skeleton.css",
-  "sideEffects": ["**/*.css"],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "exports": {
     ".": "./dist/css/guise-skeleton.css",
     "./min": "./dist/css/guise-skeleton.min.css",

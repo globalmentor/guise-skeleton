@@ -16,14 +16,14 @@ Components are high-level, semantic UI widgets. Each provides minimal structural
 
 * **Avatar** — a small, fixed-size profile image with a decorative crop.
 * **Button** — a control for initiating an action or navigating to a link.
-* **Card** — a self-contained information box for summaries or status.
-* **Hero** — a landing-page component taking up the entire page.
+* **Card** — a self-contained information box for summaries or status. It sets a background but no text color, so on a colored surface it may need an explicit `color` to stay legible.
+* **Hero** — a landing-page banner, the first visual encounter with a site; fills the viewport by default, sized on the block axis through the [size scale](#sizing).
 * **Menu** — a list of items for selection.
 * **Navbar** — a typically horizontal area for navigation items such as a menu.
-* **Page** — a general full-page component, useful for Holy Grail layouts.
+* **Page** — a full-height container for a [Holy Grail layout](#page-layout), framing a content area between a fitted header and footer.
 * **Pane** — an image of dynamically reduced size serving as a smaller preview.
 * **Panel** — a lightweight section of content or grouping of components.
-* **Rotulus** — a vertical roll of sections, ideal for landing pages.
+* **Rotulus** — a vertical roll of sections, ideal for landing pages. Even-positioned sections are striped when the roll carries `is-striped`.
 * **Table** — the standard HTML table, rebooted and made more flexible.
 * **Thumbnail** — an image of dynamically reduced size serving as a tiny preview.
 
@@ -32,13 +32,44 @@ Components are high-level, semantic UI widgets. Each provides minimal structural
 Layouts determine how children are arranged within a container. All layout classes begin with `layout-`.
 
 * **`layout-brick`** — children use only the space they need, laid out sequentially like bricks, wrapping if needed.
-* **`layout-flex`** — a flexible, responsive layout where children fill remaining space and wrap when needed.
+* **`layout-flex`** — a flexible, responsive layout where children grow to fill the remaining space and wrap when needed.
 * **`layout-marquee`** — children are centered on both axes, like the words on a marquee.
-* **`layout-tile`** — children use only the space they need, with remaining space distributed around them.
+* **`layout-tile`** — children use only the space they need, with remaining space distributed around them; tiles carry no row gap when they wrap.
+
+The flex layout takes two container modifiers: `along-block` orients children vertically, and `focalized` centers them on the main axis. A child of a flex container can carry `lay-fitted` to opt out of growing and take its natural size, letting its siblings fill the remainder; when the container is a vertical (`along-block`) `<section>`, its `<header>` and `<footer>` children are fitted automatically. Container classes use the `layout-` prefix and child modifiers the `lay-` prefix.
+
+### Sizing
+
+Guise Skeleton defines a single semantic size scale, used wherever a component takes a proportional size — the height of a hero, the width of a floated element. A component multiplies the scale's factor by whatever base is meaningful for it, such as the viewport height or the containing-block width.
+
+| Step | Factor |
+|---|---|
+| `marginal` | 0.11 |
+| `subordinate` | 0.22 |
+| `significant` | 0.33 |
+| `partial` | 0.50 |
+| `substantial` | 0.66 |
+| `full` | 1.00 |
+
+Each step is applied as a class in three forms — `size-subordinate` for an exact size, `min-size-subordinate` for a floor, and `max-size-subordinate` for a ceiling — while `size-auto` turns off proportional sizing so the element fits its content. Every step is also exposed as the custom properties `--skelt-size-subordinate-factor` (the raw fraction) and `--skelt-size-subordinate` (the fraction as a percentage).
 
 ### Customization
 
-Guise Skeleton exposes a hierarchy of `--skelt-*` custom properties. Setting a high-level property such as `--skelt-component-border-color` changes the default for all components that inherit it; setting a specific property such as `--skelt-card-border-color` overrides only that component. See the [Guise Skeleton documentation](https://guise.dev/skeleton/docs/properties) for the full property reference.
+Guise Skeleton exposes a hierarchy of `--skelt-*` custom properties. Setting a high-level property such as `--skelt-component-border-color` changes the default for all components that inherit it; setting a specific property such as `--skelt-card-border-color` overrides only that component. The [size scale](#sizing) properties follow the same model. See the [Guise Skeleton documentation](https://guise.dev/skeleton/docs/properties) for the full property reference.
+
+## Page Layout
+
+A typical page is composed as a [Holy Grail layout](https://en.wikipedia.org/wiki/Holy_grail_(web_design)): a full-height column whose header and footer stay at their natural size while the main content fills the space between. Mark the page element — usually `<body>` — as a vertical flex `page`, and fit the header and footer so they do not grow:
+
+```html
+<body class="page layout-flex along-block">
+  <header class="lay-fitted">…</header>
+  <main>…</main>
+  <footer class="lay-fitted">…</footer>
+</body>
+```
+
+Because every unfitted child of the vertical flex page grows to fill the remaining height, a `hero` placed directly in the page column expands to fill it, overriding its own size setting. To hold the hero to the size set by the scale, fit it — apply `lay-fitted` to the hero, or place it within a fitted element such as the `<header>`.
 
 ## Building Guise™ Skeleton
 
